@@ -1,9 +1,0 @@
-
-      # -*- Entry points: -*-
-      [distutils.commands]
-      zinstall = topp.utils.setup_command:zinstall
-      [opencore.versions]
-      oc-themes-andy = opencore.themes.andy
-      [topp.zcmlloader]
-      opencore = opencore.themes.andy
-        
