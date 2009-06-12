@@ -7,6 +7,9 @@
     >
 
  <!-- Using a skin allows us to layer images, etc. on top of the opencore ones -->
+ <!-- just hit zope at a url like so:
+       uri_template = http://localhost:8001/VirtualHostBase/{wsgi.url_scheme}/{HTTP_HOST}/++skin++andy/openplans/VirtualHostRoot{vh_SCRIPT_NAME}
+-->
  <interface
     interface=".interfaces.IAndySkin"
     type="zope.publisher.interfaces.browser.IBrowserSkinType"
