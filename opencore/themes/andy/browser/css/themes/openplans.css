@@ -1,0 +1,666 @@
+body {
+	color: #26394c;
+	padding: 0;
+	background: #398ee4;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.6;
+	}
+
+a, a:link, a:visited {
+	color: #297acc;
+	text-decoration: underline;
+	}
+
+a:hover, a:focus {
+	color: #7dbe0b;
+	}
+
+a:focus, a:active {
+	outline: 0;
+	}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .oc-legend-heading, .oc-label-heading {
+	font-family: Helvetica, Arial, sans-serif;
+	}
+
+#oc-page-container {
+	}
+
+#oc-content-wrapper {
+	background: #f2f2f2 url("/++resource++img/content-wrapper.png") top left repeat-x;
+	}
+
+#oc-content-main {
+	}
+
+#oc-topnav, #oc-content-container, #oc-footer {
+	}
+
+
+/*-- Header 
+------------------------------------------*/
+
+#oc-topnav-wrapper {
+	background: #e6e6e6 url("/++resource++img/headers.png") top left repeat-x;
+	color: #ffffff;
+	}
+
+div#oc-topnav {
+	padding: 0.5em 1em 0 1em;
+	}
+
+div#oc-topnav h1 {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 1.2em 0 0.25em 0;
+	padding: 0.5em 0 0;
+	letter-spacing: 0;
+	}
+
+div#oc-topnav h1 a {
+	text-decoration: none;
+	color: #1a4d80;
+	}
+
+div#oc-topnav h1 a:hover {
+	color: #297acc;
+	}
+
+div#oc-topnav h1 a img.oc-headerProjectLogo {
+	float: left;
+	margin: 10px 10px -20px 0;
+	position: relative;
+	top: -20px;
+	}
+
+div#oc-topnav ul#oc-topnav-context {
+	margin: 0;
+	position: relative;
+	}
+
+div#oc-topnav ul#oc-topnav-context li {
+	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
+	margin:0 1px 0 0;
+	}
+
+div#oc-topnav ul#oc-topnav-context li:hover {
+	background-color: #a1d64f;
+	}
+
+div#oc-topnav ul#oc-topnav-context li.oc-topnav-selected {
+	background: #ffffff;
+	}
+
+	div#oc-topnav ul#oc-topnav-context li.oc-topnav-selected a {
+		background: #ffffff;
+		color: #1a4d80;
+		}
+
+div#oc-topnav ul#oc-topnav-context li a {
+	padding: 8px 10px 4px;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 1;
+	}
+
+div#oc-topnav ul#oc-topnav-context li.oc-topnav-join {
+	background: url("/++resource++img/join-project.png") top left no-repeat;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 144px;
+	height: 32px;
+	}
+
+	div#oc-topnav ul#oc-topnav-context li.oc-topnav-join a {
+		width: 144px;
+		height: 32px;
+		padding: 0;
+		margin: 0;
+		text-indent: -9999px;
+		}
+
+div#oc-topnav div#oc-topnav-tab {
+	background: transparent;
+	width: auto;
+	height: 40px;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0;
+	}
+
+
+div#oc-topnav div#oc-topnav-tab a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+div#oc-topnav div#oc-topnav-tab a:hover, 
+div#oc-topnav div#oc-topnav-tab a:focus {
+	text-decoration: underline;
+	}
+
+div#oc-topnav-globalmenu-container {
+	text-align: left;
+	float: left;
+	}
+
+ul#oc-topnav-globalmenu {
+	font-size: 12px;
+	margin: 0 0;
+	text-transform: none;
+	float: left;
+	}
+
+	ul#oc-topnav-globalmenu .oc-dropdown-container-li {
+		background: transparent;
+		cursor: auto;
+		padding: 7px 0 0 13px;
+		margin: 0 0 0 0;
+		float: none;
+		}
+	
+	ul#oc-usermenu-explore {
+		background: transparent;
+		border-width: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: auto;
+		padding-left: 0;
+		}
+	
+	ul#oc-usermenu-explore li {
+		clear: none;
+		width: auto;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		}
+	
+	ul#oc-usermenu-explore li a {
+		margin: 0 20px 2px 0;
+		padding: 0;
+		line-height: 2.4;
+		display: block;
+		}
+	
+	ul#oc-usermenu-explore li a:hover,
+	ul#oc-usermenu-explore li a:focus {
+		background: transparent;
+		}
+
+	ul#oc-usermenu-explore li.home a {
+		background: transparent url("/++resource++img/openplans-logo.png") top left no-repeat;
+		width: 131px;
+		height: 26px;
+		text-indent: -9999px;
+		padding: 0;
+		}
+	
+#oc-topnav-tab form#oc-sitesearch {
+	margin: 9px 0 0 0;
+	padding: 0 0 1px 0;
+	background: #ffffff;
+	float: left;
+	}
+
+#oc-topnav-tab form#oc-sitesearch input#searchGadget {
+	background: transparent;
+	width: 105px;
+	border: 0;
+	margin: 0 0 0 3px;
+	padding-left: 0;
+	font-size: 12px;
+	}
+
+div#oc-topnav-usermenu-container {
+	border-top: 0;
+	margin-top: 0;
+	float: right;
+	}
+
+	.oc-dropdown-list {
+		text-transform: none;
+		}
+
+	div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
+		padding: 7px 138px 0 20px;
+		font-size: 12px;
+		}
+
+		div#oc-topnav-usermenu-container ul#oc-topnav-usermenu li {
+			font-weight: normal;
+			position: static;
+			font-weight: bold;
+			margin-right: 12px;
+			}
+
+
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
+				background: #8fbf00 url("/++resource++img/my-openplans.png") top left no-repeat;
+				border-width: 0;
+				position: absolute;
+				top: 4px;
+				right: 10px;
+				left: auto;
+				width: 120px;
+				padding: 24px 0 0;
+				z-index: 1000;
+				}
+
+				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li {
+					display: none;
+					font-weight: bold;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					}
+
+				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff:hover li {
+					display: block;
+					}
+
+					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a {
+						padding: 3px 6px;
+						display: block;
+						}
+
+					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a:hover {
+						background: #a1d64f;
+						text-decoration: none;
+						}
+
+
+/*-- Non-Project Header
+------------------------------------------*/
+
+body.non-project ul#oc-usermenu-explore li.home {
+	display: none;
+	}
+body.non-project div#oc-topnav ul#oc-topnav-context {
+	display: none;
+	}
+
+body.non-project #oc-topnav h1 {
+	background: transparent url("/++resource++img/large-logo.png") top left no-repeat;
+	float: right;
+	width: 353px;
+	height: 90px;
+	padding: 0 0 0 0;
+	margin: 1.15em 0 0 0;
+	}
+
+body.non-project #oc-topnav h1 a {
+	text-indent: -9999px;
+	float: right;
+	width: 326px;
+	height: 64px;
+	padding: 0 0;
+	margin: 13px 13px 0 0;
+	}
+
+body.non-project #oc-topnav h2 {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 1.5em 0 0 0;
+	padding: 0 0 0 0;
+	text-decoration: none;
+	color: #1a4d80;
+	width: 475px;
+	height: 87px;
+	background: transparent url("/++resource++img/tagline.png") top left no-repeat;
+	position: relative;
+	z-index: 100;
+	}
+
+body.non-project #oc-topnav h2 span {
+	display: none;
+	}
+
+
+/*-- Anonymous Header
+------------------------------------------*/
+
+body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
+	padding-right: 13px;
+	}
+
+
+/*-- Footer 
+------------------------------------------*/
+
+#oc-footer-wrapper {
+	background: #398ee4 url("/++resource++img/footer.png") top left repeat-x;
+	padding-bottom: 50px;
+	}
+
+#oc-footer {
+	color: #e6e6e6;
+	font-weight: bold;
+	padding-top: 2.5em;
+	}
+
+#oc-footer #oc-footer-about a {
+	color: #ffffff;
+	}
+
+#oc-footer .oc-smallText {
+	font-size: 13px;
+	}
+
+#oc-footer ul {
+	text-transform: capitalize;
+	overflow: hidden;
+	}
+
+#oc-footer ul li {
+	border-right: 1px solid #e6e6e6;
+	position: relative;
+	left: 1px;
+	}
+
+#oc-footer ul li a {
+	color: #e6e6e6;
+	text-decoration: none;
+	}
+
+#oc-footer ul li a:hover {
+	color: #ffffff;
+	}
+
+
+/*-- Content
+------------------------------------------*/
+
+#oc-content-container {
+	padding: 2em 1em 1em;
+	}
+
+.oc-feed-title {
+	background-color: transparent;
+	background-image: none;
+	color: #297acc;
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 0;
+	}
+
+	.oc-feed-title:after {
+		content: " \00BB";
+		}
+
+	.oc-feed-title a:link, .oc-feed-title a:visited {
+		color: #297acc;
+		}
+	
+	.oc-feed-title a:hover, .oc-feed-title a:focus {
+		color: #7dbe0b;
+		}
+
+.oc-message, .oc-statusMessage {
+	background: #e6e6e6 url("/++resource++img/header2.png") top left repeat-x;
+	border: 3px solid #297acc;
+	color: #297acc;
+	font-weight:bold;
+	margin:0 0 1.5em;
+	padding: 1em;
+	position:relative;
+	vertical-align:middle;
+	z-index:0;
+	}
+
+.oc-closeButton, oc-closebutton:hover {
+	color: #297acc !important;
+	font-size: 18px;
+	}
+
+.oc-closeButton:hover {
+	color: #26394c !important;
+	}
+
+.oc-dataTable-heading, .oc-section-heading {
+	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0.5em;
+	}
+
+a.oc-banana {
+	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
+	border-width: 0 0 0 0;
+	color: #FFFFFF !important;
+	padding: 8px 10px 4px;
+	text-decoration:none;
+	line-height: 1;
+	}
+
+a.oc-banana:hover {
+	background-color: #a1d64f;
+	}
+
+.oc-dataTable {
+	margin-bottom: 0.5em;
+	}
+
+a.oc-liveItem_showForm, 
+a.oc-liveItem_showForm:visited, 
+a.oc-actionLink, 
+a.oc-actionLink:visited {
+	background-color:#7dbe0b;
+	color: #ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	}
+
+a.oc-liveItem_showForm:hover, 
+a.oc-actionLink:hover {
+	color:#FFFFFF;
+	background-color: #297acc;
+	}
+
+#oc-tasktracker {
+	margin-left: 0;
+	margin-right: 0;
+	}
+
+ul.oc-tabs li a, 
+ul.oc-tabs li a.oc-actionLink {
+	font-weight: bold;
+	}
+
+ul.oc-tabs li a:hover, 
+ul.oc-tabs li a.oc-actionLink:hover {
+	color:#EB852B;
+	text-decoration: none;
+	}
+
+ul.oc-tabs li.oc-selected a, 
+ul.oc-tabs li.oc-selected a.oc-actionLink {
+	background-color:#297ACC;
+	color:#FFFFFF;
+	font-weight: bold;
+	}
+
+ul.oc-tabs li.oc-selected a:hover, 
+ul.oc-tabs li.oc-selected a.oc-actionLink:hover {
+	background-color:#EB852B;
+	}
+
+.oc-feed-list, .oc-feed-cluster {
+	border-top: 0;
+	border-bottom: 0;
+	}
+
+	.oc-feed-list li.oc-feed-item {
+		border: 1px solid #cacbcc;
+		background-color: #ffffff;
+		padding: 0.5em;
+		margin: 0.5em 0 1em 0;
+		}
+
+	.oc-feed-list li.oc-feed-item:last-child {
+		border: 1px solid #cacbcc;
+		}	
+
+.oc-column, .oc-home-column {
+	margin: 0 3% 2em 0;
+	width: 46%;
+	}
+
+h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
+	letter-spacing: 0;
+	}
+
+
+/*-- Sidebar
+------------------------------------------*/
+
+#oc-content-sidebar h2 {
+	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
+	color: #297acc;
+	padding: .6em;
+	font-size: 20px;
+	}
+
+
+/*-- Home Page
+------------------------------------------*/
+
+#oc-home-content {
+	border: 1px solid #cacbcc;
+	background-color: #ffffff;
+	padding: 1.2em 1.2em 0.55em;
+	}
+
+	#oc-home-content h2 {
+		font-size: 19px;
+		color: #297acc;
+		margin-bottom: 0.5em;
+		}
+
+#oc-home-getstarted {
+	}
+
+	#oc-home-getstarted h2 {
+		background: transparent url("/++resource++img/get-started.gif") top left no-repeat;
+		text-indent: -9999px;
+		float: left;
+		width: 147px;
+		height: 49px;
+		}
+
+	#oc-home-getstarted li.get-started-projects {
+		background: transparent url("/++resource++img/get-started-projects.gif") center left no-repeat;
+		padding: 10px 0 10px 30px;
+		margin-left: 150px;
+		margin-top: 10px;
+		}
+
+	#oc-home-getstarted li.get-started-people {
+		background: transparent url("/++resource++img/get-started-people.gif") center left no-repeat;
+		padding: 10px 0 10px 30px;
+		margin-left: 150px;
+		}
+
+		#oc-home-getstarted li.get-started-projects a, 
+		#oc-home-getstarted li.get-started-people a {
+			font-size: 16px;
+			text-decoration: underline;
+			line-height: 1;
+			}
+
+		#oc-home-getstarted li.get-started-projects a:hover, 
+		#oc-home-getstarted li.get-started-people a:hover {
+			}
+
+#oc-home-news h2 {
+	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
+	color: #297acc;
+	padding: .6em;
+	}
+
+#oc-home-news h2 a {
+	color: #297acc;
+	}
+
+
+/*-- Project Tour Page
+------------------------------------------*/
+
+.oc-tour-feature {
+	float: left;
+	width: 50%;
+	margin: 0 0 2em;
+	}
+.oc-tour-feature-heading {
+	clear: both;
+	}
+
+.oc-tour-icon {
+	margin-bottom: 2em;
+	}
+
+
+/*-- Blog
+------------------------------------------*/
+
+.oc-blog-headingBlock.oc-blog-postTitle {
+	background: #ffffff;
+	border: 1px solid #cacbcc;
+	}
+
+.oc-blog-storycontent {
+	padding: 0.5em 1em 0;
+	}
+
+.oc-blog-meta {
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	}
+
+.oc-blog-comments .oc-blog-headingBlock {
+	background: #ffffff;
+	border: 1px solid #cacbcc;
+	padding: 0.5em;
+	}
+
+ul#adminmenu {
+	margin-top: 0;
+	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
+	border-top: 20px solid #ffffff;
+	}
+
+#oc-content-container div.wrap {
+	border: 1px solid #cacbcc !important;
+	}
+
+#submenu, #minisub {
+	background-color: transparent;
+	}
+
+#submenu a {	
+	color: #297acc;
+	}
+
+#submenu a:hover {
+	}
+
+body.oc-wiki-content {
+	background: #ffffff;
+	color: #000;
+	}
+
+
+/*-- Tasks
+------------------------------------------*/
+
+#oc-tasktracker h1 {
+	margin-top: 0;
+	}

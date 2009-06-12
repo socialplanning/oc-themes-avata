@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:meta="http://namespaces.zope.org/meta"
+    i18n_domain="zope"
+    >
+
+  <browser:page
+     for="*"
+     class="opencore.browser.base.BaseView"
+     permission="zope2.View"
+     name="topnav-explore-menu"
+     template="explore-menu.pt"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AuthMenuView"
+     permission="zope2.View"
+     name="topnav-mystuff-menu"
+     template="mystuff-menu.pt"
+     />
+
+</configure>

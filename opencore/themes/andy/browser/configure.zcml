@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:meta="http://namespaces.zope.org/meta"
+    i18n_domain="zope"
+    >
+
+ <!-- Using a skin allows us to layer images, etc. on top of the opencore ones -->
+ <interface
+    interface=".interfaces.IAndySkin"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    name="andy"
+    />
+
+  <browser:resourceDirectory
+     name="css"
+     directory="css"
+     layer=".interfaces.IAndySkin"
+     />
+
+  <browser:resourceDirectory
+     name="img"
+     directory="img"
+     layer=".interfaces.IAndySkin"
+     />
+
+
+</configure>

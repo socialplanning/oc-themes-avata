@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: oc-themes-andy
+Version: 0.1dev
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: The Open Planning Project
+Author-email: UNKNOWN
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: Framework :: Zope3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

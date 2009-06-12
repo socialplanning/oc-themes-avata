@@ -1,0 +1,1215 @@
+Index: opencore/browser/img/default-projlogo.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/mailinglist.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/blog.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/wiki.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/portrait.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/tasks.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/touricons/team.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/mailinglist.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/blog.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/wiki.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/portrait.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/tasks.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/summaryicons/team.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/default-projlogo-thumb.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/default-projlogo-50x50.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/img/default-projlogo-80x80.gif
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: opencore/browser/css/themes/openplans.css
+===================================================================
+--- opencore/browser/css/themes/openplans.css	(revision 22171)
++++ opencore/browser/css/themes/openplans.css	(working copy)
+@@ -1,171 +1,666 @@
+ body {
+-  color: #333;
+-  background: #FFF;
+-  padding: 0;
+-}
+-#oc-page-container {}
++	color: #26394c;
++	padding: 0;
++	background: #398ee4;
++	font-family: Helvetica, Arial, sans-serif;
++	font-size: 13px;
++	line-height: 1.6;
++	}
+ 
+-#oc-topnav-wrapper {
+-  width: 100%;
+-  padding: 0;
+-  color: #fff;
+-  background: #332F2A;
+-  border-top: 0.75em solid #4D4945;
+-  border-bottom: 1px solid #4D4945;
+-}
+-#oc-topnav {
+-}
+-#oc-topnav h1 {
+-  font-size: 32px;
+-  font-weight: normal;
+-  padding: 0;
+-  margin: 0.125em 0 0.25em;
+-}
+-#oc-topnav a {
+-  text-decoration: none;
+-  color: #fff;
+-}
+-#oc-topnav a:hover {
+-}
+-ul#oc-topnav-context {
+-}
+-ul#oc-topnav-context li {
+-  background: #665D55;
+-}
+-ul#oc-topnav-context li.oc-topnav-join a {
+-  background: #6BA12A;
+-}
+-ul#oc-topnav-context li a:hover,
+-ul#oc-topnav-context li.oc-topnav-selected a {
+-  background: #EB852B;
+-}
++a, a:link, a:visited {
++	color: #297acc;
++	text-decoration: underline;
++	}
++
++a:hover, a:focus {
++	color: #7dbe0b;
++	}
++
++a:focus, a:active {
++	outline: 0;
++	}
++
++h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .oc-legend-heading, .oc-label-heading {
++	font-family: Helvetica, Arial, sans-serif;
++	}
++
++#oc-page-container {
++	}
++
+ #oc-content-wrapper {
+- /* padding: 1.5em 0 1em; */
+- /* background-color: #fff; */
+-}
++	background: #f2f2f2 url("/++resource++img/content-wrapper.png") top left repeat-x;
++	}
++
+ #oc-content-main {
+-}
++	}
++
++#oc-topnav, #oc-content-container, #oc-footer {
++	}
++
++
++/*-- Header 
++------------------------------------------*/
++
++#oc-topnav-wrapper {
++	background: #e6e6e6 url("/++resource++img/headers.png") top left repeat-x;
++	color: #ffffff;
++	}
++
++div#oc-topnav {
++	padding: 0.5em 1em 0 1em;
++	}
++
++div#oc-topnav h1 {
++	font-size: 32px;
++	font-weight: bold;
++	line-height: 1.5;
++	margin: 1.2em 0 0.25em 0;
++	padding: 0.5em 0 0;
++	letter-spacing: 0;
++	}
++
++div#oc-topnav h1 a {
++	text-decoration: none;
++	color: #1a4d80;
++	}
++
++div#oc-topnav h1 a:hover {
++	color: #297acc;
++	}
++
++div#oc-topnav h1 a img.oc-headerProjectLogo {
++	float: left;
++	margin: 10px 10px -20px 0;
++	position: relative;
++	top: -20px;
++	}
++
++div#oc-topnav ul#oc-topnav-context {
++	margin: 0;
++	position: relative;
++	}
++
++div#oc-topnav ul#oc-topnav-context li {
++	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
++	margin:0 1px 0 0;
++	}
++
++div#oc-topnav ul#oc-topnav-context li:hover {
++	background-color: #a1d64f;
++	}
++
++div#oc-topnav ul#oc-topnav-context li.oc-topnav-selected {
++	background: #ffffff;
++	}
++
++	div#oc-topnav ul#oc-topnav-context li.oc-topnav-selected a {
++		background: #ffffff;
++		color: #1a4d80;
++		}
++
++div#oc-topnav ul#oc-topnav-context li a {
++	padding: 8px 10px 4px;
++	display: block;
++	text-decoration: none;
++	color: #ffffff;
++	font-size: 12px;
++	line-height: 1;
++	}
++
++div#oc-topnav ul#oc-topnav-context li.oc-topnav-join {
++	background: url("/++resource++img/join-project.png") top left no-repeat;
++	position: absolute;
++	bottom: 0;
++	right: 0;
++	width: 144px;
++	height: 32px;
++	}
++
++	div#oc-topnav ul#oc-topnav-context li.oc-topnav-join a {
++		width: 144px;
++		height: 32px;
++		padding: 0;
++		margin: 0;
++		text-indent: -9999px;
++		}
++
++div#oc-topnav div#oc-topnav-tab {
++	background: transparent;
++	width: auto;
++	height: 40px;
++	left: 0;
++	right: 0;
++	top: 0;
++	padding: 0;
++	}
++
++
++div#oc-topnav div#oc-topnav-tab a {
++	color: #ffffff;
++	text-decoration: none;
++	}
++
++div#oc-topnav div#oc-topnav-tab a:hover, 
++div#oc-topnav div#oc-topnav-tab a:focus {
++	text-decoration: underline;
++	}
++
++div#oc-topnav-globalmenu-container {
++	text-align: left;
++	float: left;
++	}
++
++ul#oc-topnav-globalmenu {
++	font-size: 12px;
++	margin: 0 0;
++	text-transform: none;
++	float: left;
++	}
++
++	ul#oc-topnav-globalmenu .oc-dropdown-container-li {
++		background: transparent;
++		cursor: auto;
++		padding: 7px 0 0 13px;
++		margin: 0 0 0 0;
++		float: none;
++		}
++	
++	ul#oc-usermenu-explore {
++		background: transparent;
++		border-width: 0;
++		position: relative;
++		top: 0;
++		left: 0;
++		width: auto;
++		padding-left: 0;
++		}
++	
++	ul#oc-usermenu-explore li {
++		clear: none;
++		width: auto;
++		list-style: none;
++		margin: 0;
++		padding: 0;
++		}
++	
++	ul#oc-usermenu-explore li a {
++		margin: 0 20px 2px 0;
++		padding: 0;
++		line-height: 2.4;
++		display: block;
++		}
++	
++	ul#oc-usermenu-explore li a:hover,
++	ul#oc-usermenu-explore li a:focus {
++		background: transparent;
++		}
++
++	ul#oc-usermenu-explore li.home a {
++		background: transparent url("/++resource++img/openplans-logo.png") top left no-repeat;
++		width: 131px;
++		height: 26px;
++		text-indent: -9999px;
++		padding: 0;
++		}
++	
++#oc-topnav-tab form#oc-sitesearch {
++	margin: 9px 0 0 0;
++	padding: 0 0 1px 0;
++	background: #ffffff;
++	float: left;
++	}
++
++#oc-topnav-tab form#oc-sitesearch input#searchGadget {
++	background: transparent;
++	width: 105px;
++	border: 0;
++	margin: 0 0 0 3px;
++	padding-left: 0;
++	font-size: 12px;
++	}
++
++div#oc-topnav-usermenu-container {
++	border-top: 0;
++	margin-top: 0;
++	float: right;
++	}
++
++	.oc-dropdown-list {
++		text-transform: none;
++		}
++
++	div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
++		padding: 7px 138px 0 20px;
++		font-size: 12px;
++		}
++
++		div#oc-topnav-usermenu-container ul#oc-topnav-usermenu li {
++			font-weight: normal;
++			position: static;
++			font-weight: bold;
++			margin-right: 12px;
++			}
++
++
++			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
++				background: #8fbf00 url("/++resource++img/my-openplans.png") top left no-repeat;
++				border-width: 0;
++				position: absolute;
++				top: 4px;
++				right: 10px;
++				left: auto;
++				width: 120px;
++				padding: 24px 0 0;
++				z-index: 1000;
++				}
++
++				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li {
++					display: none;
++					font-weight: bold;
++					width: 100%;
++					margin: 0;
++					padding: 0;
++					}
++
++				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff:hover li {
++					display: block;
++					}
++
++					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a {
++						padding: 3px 6px;
++						display: block;
++						}
++
++					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a:hover {
++						background: #a1d64f;
++						text-decoration: none;
++						}
++
++
++/*-- Non-Project Header
++------------------------------------------*/
++
++body.non-project ul#oc-usermenu-explore li.home {
++	display: none;
++	}
++body.non-project div#oc-topnav ul#oc-topnav-context {
++	display: none;
++	}
++
++body.non-project #oc-topnav h1 {
++	background: transparent url("/++resource++img/large-logo.png") top left no-repeat;
++	float: right;
++	width: 353px;
++	height: 90px;
++	padding: 0 0 0 0;
++	margin: 1.15em 0 0 0;
++	}
++
++body.non-project #oc-topnav h1 a {
++	text-indent: -9999px;
++	float: right;
++	width: 326px;
++	height: 64px;
++	padding: 0 0;
++	margin: 13px 13px 0 0;
++	}
++
++body.non-project #oc-topnav h2 {
++	font-size: 32px;
++	font-weight: bold;
++	line-height: 1.5;
++	margin: 1.5em 0 0 0;
++	padding: 0 0 0 0;
++	text-decoration: none;
++	color: #1a4d80;
++	width: 475px;
++	height: 87px;
++	background: transparent url("/++resource++img/tagline.png") top left no-repeat;
++	position: relative;
++	z-index: 100;
++	}
++
++body.non-project #oc-topnav h2 span {
++	display: none;
++	}
++
++
++/*-- Anonymous Header
++------------------------------------------*/
++
++body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
++	padding-right: 13px;
++	}
++
++
++/*-- Footer 
++------------------------------------------*/
++
+ #oc-footer-wrapper {
+-  color: #666;
+-  background: #f9f9f9;
+-  border-top: 1px solid #332F2A;
+-  padding: 0.5em 0 1em;
+-}
+-#oc-footer a {
+-  color: #666;
+-  text-decoration: none;
+-}
+-#oc-footer a:hover {
+-  color: #999;
+-}   
+-.oc-missingText {
+-  color: gray;
+-}
++	background: #398ee4 url("/++resource++img/footer.png") top left repeat-x;
++	padding-bottom: 50px;
++	}
+ 
+-/* @HTML ELEMENTS GENERAL @TYPOGRAPHY
+--------------------------------------------- */
++#oc-footer {
++	color: #e6e6e6;
++	font-weight: bold;
++	padding-top: 2.5em;
++	}
+ 
+-.oc-feed-item-title,
+-.oc-searchresults-item h3,
+-.oc-peopleresults-content h3,
+-.oc-lineup-item h3 {
+-  font-weight: bold;
+-}
++#oc-footer #oc-footer-about a {
++	color: #ffffff;
++	}
+ 
+-/* @BOXES THAT NEED STYLE
+--------------------------------------------- */
++#oc-footer .oc-smallText {
++	font-size: 13px;
++	}
+ 
+-/* Boxy */
++#oc-footer ul {
++	text-transform: capitalize;
++	overflow: hidden;
++	}
+ 
+-.oc-boxy {
+-  border-top: 2px solid #E6D3C0;
+-  background-color: #F9F9F9;
+-  padding: 1em;
+-}
+-#oc-content-sidebar .oc-boxy h1,
+-#oc-content-sidebar .oc-boxy h2 {
+-  padding-bottom: 0.5em;
+-  border-bottom: 1px dotted #E6D3C0;
+-}
++#oc-footer ul li {
++	border-right: 1px solid #e6e6e6;
++	position: relative;
++	left: 1px;
++	}
+ 
+-/* Get Started */
++#oc-footer ul li a {
++	color: #e6e6e6;
++	text-decoration: none;
++	}
+ 
+-.oc-getstarted {
+-  border: 1px solid #EB852B;;
+-  background-color: #F9F9F9;
+-}
+-.oc-getstarted h1,
+-.oc-getstarted h2 {
+-  border-bottom: 1px dotted #EB852B;
+-  padding-bottom: 0.5em;
+-  margin: 0 0 0.5em;
+-}
+-.oc-getstarted h1 a,
+-.oc-getstarted h2 a {
+-}
+-.oc-getstarted p {
+-  margin: 0;
+-}
++#oc-footer ul li a:hover {
++	color: #ffffff;
++	}
+ 
+-.oc-getstarted p,
+-.oc-getstarted-list {
+-  margin-bottom: 1em;
+-}
+-.oc-getstarted-list p {
+-}
+-.oc-getstarted a {
+- color: #EB852B;
+- font-weight: bold;
+-}
+ 
+-/* Search Widgets */
++/*-- Content
++------------------------------------------*/
+ 
+-.oc-widget-search,
+-#oc-content-sidebar .oc-widget-search,
+-#oc-content-sidebar .oc-widget-search.oc-boxy {
+-  border: 1px solid #E6D3C0;
+-  border-top: 2px solid #4D4945;
+-  padding: 1em;
+-}
+-.oc-widget-alphabet,
+-#oc-content-sidebar ul.oc-widget-alphabet.oc-boxy {
+-  border: none;
+-  border-top: 1px dotted #332F2A;
+-  background: none;
+-  padding: 0;
+-  padding-top: 0.5em;
+-  margin-top: 0.5em;
+-}
+-.oc-widget-multiSearch {
+-}
+-.oc-widget-multiSearch .oc-label-heading {
+- display: inline;
+- padding-right: 0.5em;
+-}
+-.oc-widget-multiSearch ul.oc-inlineList {
+-  margin: 0.5em;
+-  display: inline;
+-}
+-.oc-widget-multiSearch .oc-form-fieldBlock {
+-  margin-top: 0.5em;
+-}
++#oc-content-container {
++	padding: 2em 1em 1em;
++	}
+ 
+-/* Form Boxes */
++.oc-feed-title {
++	background-color: transparent;
++	background-image: none;
++	color: #297acc;
++	font-size: 22px;
++	font-weight: bold;
++	padding-left: 0;
++	}
+ 
+-.oc-boxy legend.oc-legend-heading{
+-}
+-#oc-join-form fieldset.oc-boxy,
+-#oc-login-form fieldset.oc-boxy {
+-  margin-top: -0.75em;
+-}
+-#oc-join-form .oc-form-label{
+-  width: 11em;
+-}
++	.oc-feed-title:after {
++		content: " \00BB";
++		}
+ 
+-/* Member badges */
+-#oc-member-badge,
+-.oc-directory-list li.vcard,
+-.oc-roster li.vcard {
+-  background-color: #F6F6F6;
+-}
++	.oc-feed-title a:link, .oc-feed-title a:visited {
++		color: #297acc;
++		}
++	
++	.oc-feed-title a:hover, .oc-feed-title a:focus {
++		color: #7dbe0b;
++		}
+ 
++.oc-message, .oc-statusMessage {
++	background: #e6e6e6 url("/++resource++img/header2.png") top left repeat-x;
++	border: 3px solid #297acc;
++	color: #297acc;
++	font-weight:bold;
++	margin:0 0 1.5em;
++	padding: 1em;
++	position:relative;
++	vertical-align:middle;
++	z-index:0;
++	}
++
++.oc-closeButton, oc-closebutton:hover {
++	color: #297acc !important;
++	font-size: 18px;
++	}
++
++.oc-closeButton:hover {
++	color: #26394c !important;
++	}
++
++.oc-dataTable-heading, .oc-section-heading {
++	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
++	color: #FFFFFF;
++	margin: 0;
++	padding: 0.5em;
++	}
++
++a.oc-banana {
++	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
++	border-width: 0 0 0 0;
++	color: #FFFFFF !important;
++	padding: 8px 10px 4px;
++	text-decoration:none;
++	line-height: 1;
++	}
++
++a.oc-banana:hover {
++	background-color: #a1d64f;
++	}
++
++.oc-dataTable {
++	margin-bottom: 0.5em;
++	}
++
++a.oc-liveItem_showForm, 
++a.oc-liveItem_showForm:visited, 
++a.oc-actionLink, 
++a.oc-actionLink:visited {
++	background-color:#7dbe0b;
++	color: #ffffff;
++	text-decoration:none;
++	text-transform:uppercase;
++	}
++
++a.oc-liveItem_showForm:hover, 
++a.oc-actionLink:hover {
++	color:#FFFFFF;
++	background-color: #297acc;
++	}
++
++#oc-tasktracker {
++	margin-left: 0;
++	margin-right: 0;
++	}
++
++ul.oc-tabs li a, 
++ul.oc-tabs li a.oc-actionLink {
++	font-weight: bold;
++	}
++
++ul.oc-tabs li a:hover, 
++ul.oc-tabs li a.oc-actionLink:hover {
++	color:#EB852B;
++	text-decoration: none;
++	}
++
++ul.oc-tabs li.oc-selected a, 
++ul.oc-tabs li.oc-selected a.oc-actionLink {
++	background-color:#297ACC;
++	color:#FFFFFF;
++	font-weight: bold;
++	}
++
++ul.oc-tabs li.oc-selected a:hover, 
++ul.oc-tabs li.oc-selected a.oc-actionLink:hover {
++	background-color:#EB852B;
++	}
++
++.oc-feed-list, .oc-feed-cluster {
++	border-top: 0;
++	border-bottom: 0;
++	}
++
++	.oc-feed-list li.oc-feed-item {
++		border: 1px solid #cacbcc;
++		background-color: #ffffff;
++		padding: 0.5em;
++		margin: 0.5em 0 1em 0;
++		}
++
++	.oc-feed-list li.oc-feed-item:last-child {
++		border: 1px solid #cacbcc;
++		}	
++
++.oc-column, .oc-home-column {
++	margin: 0 3% 2em 0;
++	width: 46%;
++	}
++
++h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
++	letter-spacing: 0;
++	}
++
++
++/*-- Sidebar
++------------------------------------------*/
++
++#oc-content-sidebar h2 {
++	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
++	color: #297acc;
++	padding: .6em;
++	font-size: 20px;
++	}
++
++
++/*-- Home Page
++------------------------------------------*/
++
++#oc-home-content {
++	border: 1px solid #cacbcc;
++	background-color: #ffffff;
++	padding: 1.2em 1.2em 0.55em;
++	}
++
++	#oc-home-content h2 {
++		font-size: 19px;
++		color: #297acc;
++		margin-bottom: 0.5em;
++		}
++
++#oc-home-getstarted {
++	}
++
++	#oc-home-getstarted h2 {
++		background: transparent url("/++resource++img/get-started.gif") top left no-repeat;
++		text-indent: -9999px;
++		float: left;
++		width: 147px;
++		height: 49px;
++		}
++
++	#oc-home-getstarted li.get-started-projects {
++		background: transparent url("/++resource++img/get-started-projects.gif") center left no-repeat;
++		padding: 10px 0 10px 30px;
++		margin-left: 150px;
++		margin-top: 10px;
++		}
++
++	#oc-home-getstarted li.get-started-people {
++		background: transparent url("/++resource++img/get-started-people.gif") center left no-repeat;
++		padding: 10px 0 10px 30px;
++		margin-left: 150px;
++		}
++
++		#oc-home-getstarted li.get-started-projects a, 
++		#oc-home-getstarted li.get-started-people a {
++			font-size: 16px;
++			text-decoration: underline;
++			line-height: 1;
++			}
++
++		#oc-home-getstarted li.get-started-projects a:hover, 
++		#oc-home-getstarted li.get-started-people a:hover {
++			}
++
++#oc-home-news h2 {
++	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
++	color: #297acc;
++	padding: .6em;
++	}
++
++#oc-home-news h2 a {
++	color: #297acc;
++	}
++
++
++/*-- Project Tour Page
++------------------------------------------*/
++
++.oc-tour-feature {
++	float: left;
++	width: 50%;
++	margin: 0 0 2em;
++	}
++.oc-tour-feature-heading {
++	clear: both;
++	}
++
++.oc-tour-icon {
++	margin-bottom: 2em;
++	}
++
++
++/*-- Blog
++------------------------------------------*/
++
++.oc-blog-headingBlock.oc-blog-postTitle {
++	background: #ffffff;
++	border: 1px solid #cacbcc;
++	}
++
++.oc-blog-storycontent {
++	padding: 0.5em 1em 0;
++	}
++
++.oc-blog-meta {
++	padding: 0.5em 1em;
++	margin: 1em 0;
++	}
++
++.oc-blog-comments .oc-blog-headingBlock {
++	background: #ffffff;
++	border: 1px solid #cacbcc;
++	padding: 0.5em;
++	}
++
++ul#adminmenu {
++	margin-top: 0;
++	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
++	border-top: 20px solid #ffffff;
++	}
++
++#oc-content-container div.wrap {
++	border: 1px solid #cacbcc !important;
++	}
++
++#submenu, #minisub {
++	background-color: transparent;
++	}
++
++#submenu a {	
++	color: #297acc;
++	}
++
++#submenu a:hover {
++	}
++
++body.oc-wiki-content {
++	background: #ffffff;
++	color: #000;
++	}
++
++
++/*-- Tasks
++------------------------------------------*/
++
++#oc-tasktracker h1 {
++	margin-top: 0;
++	}
+Index: opencore/browser/topnav/mystuff-menu.pt
+===================================================================
+--- opencore/browser/topnav/mystuff-menu.pt	(revision 22171)
++++ opencore/browser/topnav/mystuff-menu.pt	(working copy)
+@@ -1,6 +1,9 @@
+ 
+-<ul id="oc-usermenu-mystuff" style="display:none;"
++<ul id="oc-usermenu-mystuff" 
+     tal:define="memfolder_url view/memfolder_url">
++
++  <li><hr class="oc-usermenu-divider" /></li>
++    
+   <li>
+     <a tal:attributes="href string:${memfolder_url}/profile">Profile</a>
+   </li>
+Index: opencore/browser/topnav/topnav.pt
+===================================================================
+--- opencore/browser/topnav/topnav.pt	(revision 22171)
++++ opencore/browser/topnav/topnav.pt	(working copy)
+@@ -1,10 +1,26 @@
+ <div id="oc-topnav">
+ 
+-  <h1>
+-    <a tal:attributes="href string:${view/areaURL}"
+-       tal:content="view/area/Title" />
++  <h1 tal:define="piv context/@@project_info">
++    <tal:in-project condition="piv/inProject">
++      <a tal:define="project nocall:piv/project"
++         tal:attributes="title project/Title;
++                         href project/absolute_url">
++        <img class="oc-headerProjectLogo"
++             tal:attributes="title project/Title;
++                             alt project/Title;
++                             src string:${project/absolute_url}/logo_square_thumb" />
++        <tal:project-title replace="project/Title" />
++      </a>
++    </tal:in-project>
++    <a tal:define="portal_state context/@@plone_portal_state"
++       tal:attributes="title portal_state/portal_title;
++                       href portal_state/portal_url"
++       tal:content="portal_state/portal_title"
++       tal:condition="not:piv/inProject" />
+   </h1>
+ 
++  <h2 tal:condition="python:not view.piv.inProject" id="tagline">Do good, better.<span> OpenPlans is a platform for social activism.</span></h2>
++
+   <tal:comment replace="nothing">
+     <!-- old topnav generation -->
+     <tal:contextMenu replace="structure view/contextmenu" />
+@@ -19,12 +35,7 @@
+   <div id="oc-topnav-tab">
+     <div id="oc-topnav-globalmenu-container">
+     <ul id="oc-topnav-globalmenu" class="oc-dropdown-list">
+-      <li class="oc-dropdown-container">
+-        <a tal:attributes="href here/portal_url">
+-          <img src="++resource++img/logo.gif" 
+-               tal:attributes="alt view/portal_title"
+-               style="display: inline;" />
+-        </a>
++      <li class="oc-dropdown-container-li">
+         <tal:exploremenu replace="structure context/topnav-explore-menu" />
+       </li>
+     </ul>
+@@ -35,6 +46,7 @@
+       <input id="searchGadget" name="search_for"
+              type="text" size="10" title="Search site"
+              accesskey="4" class="oc-input-typeText" />
++      <input class="button" name="searchsubmit" value="Find" tabindex="2" src="/++resource++img/search-button.png" align="middle" type="image">
+     </form>
+     </div>
+     
+Index: opencore/browser/topnav/user-menu.pt
+===================================================================
+--- opencore/browser/topnav/user-menu.pt	(revision 22171)
++++ opencore/browser/topnav/user-menu.pt	(working copy)
+@@ -1,7 +1,7 @@
+ 
+ <ul id="oc-topnav-usermenu" class="oc-dropdown-list">
+ 
+-  <li class="oc-dropdown-container"
++  <li
+       tal:define="auth view/loggedin;
+                   memfolder_url view/memfolder_url;
+                   memprofile_url string:${memfolder_url}/profile;
+Index: opencore/browser/topnav/explore-menu.pt
+===================================================================
+--- opencore/browser/topnav/explore-menu.pt	(revision 22171)
++++ opencore/browser/topnav/explore-menu.pt	(working copy)
+@@ -1,6 +1,6 @@
+ 
+-<ul id="oc-usermenu-explore" style="display:none;">
+-  <li>
++<ul id="oc-usermenu-explore">
++  <li class="home">
+     <a tal:attributes="href context/portal_url"
+        tal:content="string:Home" />
+   </li>
+Index: opencore/nui/main/get-started.pt
+===================================================================
+--- opencore/nui/main/get-started.pt	(revision 22171)
++++ opencore/nui/main/get-started.pt	(working copy)
+@@ -1,6 +1,6 @@
+ <div id="oc-home-getstarted" class="oc-getstarted">
+   <h2>Get started!</h2>
+-  <ul class="oc-getstarted-list"
++  <ul class="oc-getstarted-list oc-clearAfter"
+       tal:define="ms context/portal_membership">
+     <li tal:condition="ms/isAnonymousUser">
+       <h3>
+@@ -10,10 +10,10 @@
+         </span>
+       </h3>
+     </li>
+-    <li>
++    <li class="get-started-projects">
+       <h3><a tal:attributes="href string:${context/portal_url}/projects">Find <span tal:replace="view/project_noun">project</span>s</a></h3>  
+     </li>
+-    <li>
++    <li class="get-started-people">
+       <h3><a tal:attributes="href string:${context/portal_url}/people">Find people</a></h3>
+     </li>
+   </ul>
+Index: opencore/nui/main/home.pt
+===================================================================
+--- opencore/nui/main/home.pt	(revision 22171)
++++ opencore/nui/main/home.pt	(working copy)
+@@ -15,29 +15,9 @@
+       <div id="oc-content-main" class="oc-content-main">
+         <div id="oc-home-content" class="oc-boxy">
+             <div class="oc-headingBlock">
+-              <h1 i18n:translate="home_header">Do good, better.</h1>
++              <h2 i18n:translate="home_opening_blurb">You want to <strong>make a difference</strong>. We want to <strong>make it easy</strong>.</h2>
++              <p i18n:translate="home_functions_blurb">OpenPlans is the simple way to bring groups together, promote your cause, make plans, manage projects, and get things done. OpenPlans offers free mailing lists, wikis, task tracking, team management, and blogs to help you build an online community and promote real-world change.</p>
+             </div>
+-            <ul class="oc-plainList" style="width: 50%; float: right;">
+-                  <li tal:condition="not: view/loggedin">
+-                    <a class="oc-banana" 
+-                       tal:attributes="href string:${context/portal_url}/join"
+-                       tal:content="string:Join ${view/portal_title}" />
+-                  </li>
+-                  <li tal:condition="not: view/loggedin">
+-                    <a class="oc-banana" i18n:translate="home_learn_more" tal:attributes="href string:${context/portal_url}/about">Learn more</a>
+-                  </li>
+-                  <li tal:condition="view/loggedin">
+-                    <a class="oc-banana" i18n:translate="home_find_projects" tal:attributes="href string:${context/portal_url}/projects">Find <span i18n:name="project_noun" tal:replace="view/project_noun">project</span>s</a>
+-                  </li>
+-                  <li tal:condition="view/loggedin">
+-                    <a class="oc-banana" i18n:translate="home_start_project" tal:attributes="href string:${context/portal_url}/projects/create">Start a <span i18n:name="project_noun" tal:replace="view/project_noun">project</span></a>
+-                  </li>
+-            </ul>
+-            <div>
+-	      <p tal:content="string:${view/portal_title} is a platform for social activism." />
+-              <p i18n:translate="home_opening_blurb">You want to <strong>make a difference</strong>, we want to <strong>make it easy</strong>. OpenPlans is the simple way to bring groups together, promote your cause, make plans, manage projects, and get things done.</p>
+-              <p i18n:translate="home_functions_blurb">OpenPlans offers free mailing lists, wikis, task tracking, team management, and blogs to help you build an online community and promote real-world change.</p>
+-	    </div>
+           </div><!-- oc-home-content -->
+         
+         <div class="oc-home-columnGroup oc-clearAfter">
+Index: opencore/project/browser/projectinfo.py
+===================================================================
+--- opencore/project/browser/projectinfo.py	(revision 22171)
++++ opencore/project/browser/projectinfo.py	(working copy)
+@@ -34,12 +34,29 @@
+             # get the related project
+             return aq_inner(context.getProject())
+         # probably wrap this in an adapter
+-        return interface_in_aq_chain(context, IProject)
++        proj_in_chain = interface_in_aq_chain(context, IProject)
++        if proj_in_chain is not None:
++            return proj_in_chain
++        # XXX deliverance can ask for the theme and pass in the project
++        # and app through headers instead of in the url, so it won't be
++        # in the chain
++        # we'll check for those headers explicitly here
++        app_header = self.request.environ.get('HTTP_X_OPENPLANS_APPLICATION',
++                                              'zope')
++        # deliverance sets the app_header to "zope" by default
++        if app_header != 'zope':
++            proj_name = self.request.environ.get('HTTP_X_OPENPLANS_PROJECT')
++            if proj_name is not None:
++                portal = getToolByName(context, 'portal_url').getPortalObject()
++                try:
++                    proj = portal.projects.restrictedTraverse(proj_name)
++                except AttributeError:
++                    return None
++                return proj
+ 
+     @property
+     def inProject(self):
+-        inside = self.project is not None
+-        return inside
++        return self.project is not None
+ 
+     @instance.memoizedproperty
+     def projectMembership(self):
+Index: opencore/project/browser/latest_activity.pt
+===================================================================
+--- opencore/project/browser/latest_activity.pt	(revision 22171)
++++ opencore/project/browser/latest_activity.pt	(working copy)
+@@ -9,8 +9,6 @@
+ 
+         <!-- project metadata -->
+         <div class="oc-headingBlock oc-clearAfter">
+-          <img style="float: left; width: 80px; margin: 0 1em 0.5em 0; border: 1px solid #EEE;" tal:attributes="src view/logo_url" />
+-          <h1 tal:content="view/area/Title">Title</h1>
+           <p class="oc-headingContext oc-discreetText">
+             created 
+             <span tal:define="date view/area/CreationDate"
+@@ -23,8 +21,8 @@
+               yesterday
+             </span>
+             <a tal:condition="not: context/isProjectMember"  href="request-membership" class="oc-actionLink">Join</a>
++            <a class="oc-actionLink" tal:condition="view/team_manager" href="preferences">EDIT</a>
+           </p>
+-	  <a class="oc-actionLink" tal:condition="view/team_manager" href="preferences">EDIT</a>
+           <p tal:condition="view/project_info/description" tal:content="view/project_info/description" />
+         </div>
+ 
+Index: opencore/project/browser/tour.pt
+===================================================================
+--- opencore/project/browser/tour.pt	(revision 22171)
++++ opencore/project/browser/tour.pt	(working copy)
+@@ -7,7 +7,7 @@
+     <div metal:fill-slot="content">
+ 
+       <div id="oc-content-main">
+-        <div class="oc-headingBlock">
++        <div class="oc-headingBlock oc-tour-feature-heading">
+           <h1>Congratulations on starting your <span tal:replace="view/project_noun">project</span>.</h1>
+           <p class="oc-headingContext"> Now you can&hellip;</p>
+         </div>
+@@ -18,11 +18,11 @@
+             <p class="oc-headingContext">Announce your <span tal:replace="view/project_noun">project</span>.</p>
+           </div>
+ 
+-          <div>
++          <div class="oc-tour-feature">
+             <a tal:attributes="href string:${context/absolute_url}/project-home">
+               <img src="++resource++img/touricons/wiki.gif" alt="Wiki pages" class="oc-tour-icon" />
+-              <h3>Wiki pages</h3>
+             </a>
++            <h3><a tal:attributes="href string:${context/absolute_url}/project-home">Wiki pages</a></h3>
+             <ul class="oc-discreetText oc-plainList">
+               <li>A blank canvas for key information</li>
+               <li>Write collaboratively</li>
+@@ -31,11 +31,11 @@
+             </ul>
+           </div>
+ 
+-          <div tal:condition="view/has_blog">
++          <div tal:condition="view/has_blog" class="oc-tour-feature">
+             <a tal:attributes="href string:${context/absolute_url}/blog">
+               <img src="++resource++img/touricons/blog.gif" alt="Blog" class="oc-tour-icon" />
+-              <h3>Blog</h3>
+             </a>
++            <h3><a tal:attributes="href string:${context/absolute_url}/blog">Blog</a></h3>
+             <ul class="oc-discreetText oc-plainList">
+               <li>Publish updates</li>
+               <li>Attract attention</li>
+@@ -46,16 +46,16 @@
+         </div>
+         
+         <div class="oc-boxy">
+-          <div class="oc-headingBlock">
++          <div class="oc-headingBlock oc-tour-feature-heading">
+             <h2>Organize</h2>
+             <p class="oc-headingContext">Keep your team organized and on-track.</p>
+           </div>
+ 
+-          <div>
++          <div class="oc-tour-feature">
+             <a tal:attributes="href string:${context/absolute_url}/manage-team">
+               <img src="++resource++img/touricons/team.gif" alt="Teams" class="oc-tour-icon" />
+-              <h3>Manage your team</h3>
+             </a>
++            <h3><a tal:attributes="href string:${context/absolute_url}/manage-team">Manage your team</a></h3>
+             <ul class="oc-discreetText oc-plainList">
+               <li>Invite people to join this <span tal:replace="view/project_noun">project</span></li>
+               <li>Build momentum</li>
+@@ -63,11 +63,11 @@
+             </ul>
+           </div>
+         
+-          <div tal:condition="view/has_mailing_lists">
++          <div tal:condition="view/has_mailing_lists" class="oc-tour-feature">
+             <a tal:attributes="href string:${context/absolute_url}/lists">
+               <img src="++resource++img/touricons/mailinglist.gif" alt="Mailing lists" class="oc-tour-icon" />
+-              <h3>Mailing lists</h3>
+             </a>
++            <h3><a tal:attributes="href string:${context/absolute_url}/lists">Mailing lists</a></h3>
+             <ul class="oc-discreetText oc-plainList">
+               <li>Keep everyone up-to-date</li>
+               <li>Promote discussions</li>
+@@ -75,11 +75,11 @@
+             </ul>
+           </div>
+         
+-          <div tal:condition="view/has_task_tracker">
++          <div tal:condition="view/has_task_tracker" class="oc-tour-feature">
+             <a tal:attributes="href string:${context/absolute_url}/tasks">
+               <img src="++resource++img/touricons/tasks.gif" alt="Tasks" class="oc-tour-icon" />
+-              <h3>Task Tracker</h3>
+             </a>
++            <h3><a tal:attributes="href string:${context/absolute_url}/tasks">Task Tracker</a></h3>
+             <ul class="oc-discreetText oc-plainList">
+               <li>Share to-do lists</li>
+               <li>Assign tasks to others</li>
+@@ -89,14 +89,15 @@
+ 
+         </div>
+ 
+-  <p class="oc-smallText">
+-    Want to add or remove tools from your <span tal:replace="view/project_noun">project</span>? Change your <a tal:attributes="href
+-           string:${context/absolute_url}/preferences">preferences</a>.
+-  </p>
+-
+       </div><!-- end #oc-content-main -->
+ 
+       <div id="oc-content-sidebar">
++
++        <p class="oc-smallText">
++          Want to add or remove tools from your <span tal:replace="view/project_noun">project</span>? <br />Change your <a tal:attributes="href
++                 string:${context/absolute_url}/preferences">preferences</a>.
++        </p>
++
+       </div><!-- end #oc-content-sidebar -->
+ 
+   </div><!-- content-fill-slot -->
