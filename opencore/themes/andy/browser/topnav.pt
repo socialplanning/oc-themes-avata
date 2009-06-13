@@ -1,0 +1,64 @@
+<div id="oc-topnav" i18n:domain="opencore">
+
+  <h1>
+    <a tal:attributes="href view/area/absolute_url"
+       tal:content="view/area/Title" />
+  </h1>
+
+  <h1 tal:define="piv view/piv/@@project_info">
+   <tal:in-project condition="piv/inProject">
+     <a tal:define="project nocall:piv/project"
+        tal:attributes="title project/Title;
+                        href project/absolute_url">
+       <img class="oc-headerProjectLogo"
+            tal:attributes="title project/Title;
+                            alt project/Title;
+                            src string:${project/absolute_url}/logo_square_thumb" />
+       <tal:project-title replace="project/Title" />
+     </a>
+   </tal:in-project>
+   <a tal:define="portal_state context/@@plone_portal_state"
+      tal:attributes="title portal_state/portal_title;
+                      href portal_state/portal_url"
+      tal:content="portal_state/portal_title"
+      tal:condition="not:piv/inProject" />
+  </h1>
+ 
+  <h2 tal:condition="python:not view.piv.inProject" id="tagline">Do good, better.<span> OpenPlans is a platform for social activism.</span></h2>
+
+  <tal:comment replace="nothing">
+    <!-- old topnav generation -->
+    <tal:contextMenu replace="structure view/contextmenu" />
+  </tal:comment>
+
+  <ul id="oc-topnav-context" class="oc-clearAfter"
+      tal:define="contextmenu view/contextmenu"
+      tal:condition="contextmenu"
+      tal:content="structure contextmenu"
+      />
+
+  <div id="oc-topnav-tab">
+    <div id="oc-topnav-globalmenu-container">
+    <ul id="oc-topnav-globalmenu" class="oc-dropdown-list">
+      <li class="oc-dropdown-container-li">
+        <tal:exploremenu replace="structure context/topnav-explore-menu" />
+      </li>
+    </ul>
+
+    <form name="searchform" id="oc-sitesearch"
+          tal:attributes="action string:${view/portal/absolute_url}/sitesearch"
+          onsubmit="return liveSearchSubmit()">
+      <input id="searchGadget" name="search_for"
+             type="text" size="10" title="Search site"
+             accesskey="4" class="oc-input-typeText"
+	     i18n:attributes="title topnav_site_search_label"
+	     />
+      <input class="button" name="searchsubmit" value="Find" tabindex="2" src="/++resource++img/search-button.png" align="middle" type="image">
+    </form>
+    </div>
+    
+    <div id="oc-topnav-usermenu-container" tal:content="structure view/usermenu" />
+    
+  </div>
+
+</div>

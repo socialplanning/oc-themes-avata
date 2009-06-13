@@ -2,9 +2,7 @@
     id="oc-usermenu-mystuff"
     tal:define="memfolder_url view/memfolder_url">
 
-
   <li><hr class="oc-usermenu-divider" /></li>
-    
 
   <li>
     <a i18n:translate="Profile"
