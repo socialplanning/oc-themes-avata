@@ -1,19 +1,19 @@
 body {
-	color: #26394c;
+	color: #332f2a;
 	padding: 0;
-	background: #398ee4;
+	background:  #4c4844;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.6;
 	}
 
 a, a:link, a:visited {
-	color: #297acc;
+	color: #8fbf00;
 	text-decoration: underline;
 	}
 
 a:hover, a:focus {
-	color: #7dbe0b;
+	color: #8fbf00;
 	}
 
 a:focus, a:active {
@@ -61,11 +61,11 @@ div#oc-topnav h1 {
 
 div#oc-topnav h1 a {
 	text-decoration: none;
-	color: #1a4d80;
+	color: #eb852b;
 	}
 
 div#oc-topnav h1 a:hover {
-	color: #297acc;
+	color: #b36521;
 	}
 
 div#oc-topnav h1 a img.oc-headerProjectLogo {
@@ -196,7 +196,7 @@ ul#oc-topnav-globalmenu {
 		}
 
 	ul#oc-usermenu-explore li.home a {
-		background: transparent url("/++resource++img/openplans-logo.png") top left no-repeat;
+		background: transparent url("/++resource++img/small-logo.png");
 		width: 131px;
 		height: 26px;
 		text-indent: -9999px;
@@ -290,7 +290,7 @@ body.non-project div#oc-topnav ul#oc-topnav-context {
 body.non-project #oc-topnav h1 {
 	background: transparent url("/++resource++img/large-logo.png") top left no-repeat;
 	float: right;
-	width: 353px;
+	width: 391px;
 	height: 90px;
 	padding: 0 0 0 0;
 	margin: 1.15em 0 0 0;
@@ -312,7 +312,7 @@ body.non-project #oc-topnav h2 {
 	margin: 1.5em 0 0 0;
 	padding: 0 0 0 0;
 	text-decoration: none;
-	color: #1a4d80;
+	color: #332f2a;
 	width: 475px;
 	height: 87px;
 	background: transparent url("/++resource++img/tagline.png") top left no-repeat;
@@ -337,7 +337,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 ------------------------------------------*/
 
 #oc-footer-wrapper {
-	background: #398ee4 url("/++resource++img/footer.png") top left repeat-x;
+	background: #4c4844 url("/++resource++img/footer.png") repeat-x;
 	padding-bottom: 50px;
 	}
 
@@ -379,6 +379,8 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 /*-- Content
 ------------------------------------------*/
 
+.oc-discreetText {color:#eb852b;}
+
 #oc-content-container {
 	padding: 2em 1em 1em;
 	}
@@ -386,7 +388,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 .oc-feed-title {
 	background-color: transparent;
 	background-image: none;
-	color: #297acc;
+	color: #eb852b;
 	font-size: 22px;
 	font-weight: bold;
 	padding-left: 0;
@@ -397,17 +399,19 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 		}
 
 	.oc-feed-title a:link, .oc-feed-title a:visited {
-		color: #297acc;
+		color: #b36521;
 		}
 	
 	.oc-feed-title a:hover, .oc-feed-title a:focus {
-		color: #7dbe0b;
+		color: #8fbf00;
 		}
+
+.oc-widget-feed .oc-paginator {color:#b36521;}
 
 .oc-message, .oc-statusMessage {
 	background: #e6e6e6 url("/++resource++img/header2.png") top left repeat-x;
-	border: 3px solid #297acc;
-	color: #297acc;
+	border: 3px solid #eb852b;
+	color: #eb852b;
 	font-weight:bold;
 	margin:0 0 1.5em;
 	padding: 1em;
@@ -417,7 +421,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 	}
 
 .oc-closeButton, oc-closebutton:hover {
-	color: #297acc !important;
+	color: #eb852b !important;
 	font-size: 18px;
 	}
 
@@ -426,7 +430,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 	}
 
 .oc-dataTable-heading, .oc-section-heading {
-	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
+	background: #332f2a url("/++resource++img/header.png") top left repeat-x scroll;
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0.5em;
@@ -453,7 +457,7 @@ a.oc-liveItem_showForm,
 a.oc-liveItem_showForm:visited, 
 a.oc-actionLink, 
 a.oc-actionLink:visited {
-	background-color:#7dbe0b;
+	background-color:#8fbf00;
 	color: #ffffff;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -462,7 +466,7 @@ a.oc-actionLink:visited {
 a.oc-liveItem_showForm:hover, 
 a.oc-actionLink:hover {
 	color:#FFFFFF;
-	background-color: #297acc;
+	background-color: #eb852b;
 	}
 
 #oc-tasktracker {
@@ -483,7 +487,7 @@ ul.oc-tabs li a.oc-actionLink:hover {
 
 ul.oc-tabs li.oc-selected a, 
 ul.oc-tabs li.oc-selected a.oc-actionLink {
-	background-color:#297ACC;
+	background-color:#EB852B;
 	color:#FFFFFF;
 	font-weight: bold;
 	}
@@ -524,7 +528,7 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 
 #oc-content-sidebar h2 {
 	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
-	color: #297acc;
+	color: #eb852b;
 	padding: .6em;
 	font-size: 20px;
 	}
@@ -541,7 +545,7 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 
 	#oc-home-content h2 {
 		font-size: 19px;
-		color: #297acc;
+		color: #eb852b;
 		margin-bottom: 0.5em;
 		}
 
@@ -582,12 +586,12 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 
 #oc-home-news h2 {
 	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
-	color: #297acc;
+	color: #eb852b;
 	padding: .6em;
 	}
 
 #oc-home-news h2 a {
-	color: #297acc;
+	color: #eb852b;
 	}
 
 
@@ -633,7 +637,7 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 
 ul#adminmenu {
 	margin-top: 0;
-	background: #297bcd url("/++resource++img/header.png") top left repeat-x;
+	background: #332f2a url("/++resource++img/header.png") top left repeat-x scroll;
 	border-top: 20px solid #ffffff;
 	}
 
@@ -646,7 +650,7 @@ ul#adminmenu {
 	}
 
 #submenu a {	
-	color: #297acc;
+	color: #eb852b;
 	}
 
 #submenu a:hover {
