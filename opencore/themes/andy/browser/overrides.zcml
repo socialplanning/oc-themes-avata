@@ -8,6 +8,14 @@
 
   <browser:page
      for="*"
+     class="opencore.browser.topnav.topnav.TopNavView"
+     permission="zope2.View"
+     name="oc-topnav"
+     template="topnav.pt"
+     />
+
+  <browser:page
+     for="*"
      class="opencore.browser.topnav.topnav.AuthMenuView"
      permission="zope2.View"
      name="topnav-mystuff-menu"
