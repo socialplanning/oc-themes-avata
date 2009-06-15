@@ -1,0 +1,119 @@
+<html metal:use-macro="here/@@standard_macros/master" i18n:domain="opencore">
+  <head>
+    <title metal:fill-slot="title" i18n:translate="project_tour_window_title">
+      Tour - <tal:i18n i18n:name="project_title" tal:replace="context/Title" /> on <tal:i18n i18n:name="portal_title" tal:replace="view/portal_title" />
+    </title>
+  </head>
+  <body>
+
+    <div metal:fill-slot="content">
+
+      <div id="oc-content-main">
+        <div class="oc-headingBlock oc-tour-feature-heading">
+          <h1 i18n:translate="project_tour_header">Congratulations on starting your <span i18n:name="project_noun" tal:replace="view/project_noun">project</span>.</h1>
+          <p class="oc-headingContext" i18n:translate="project_tour_header_2"> Now you can&hellip;</p>
+        </div>
+
+        <div class="oc-boxy">
+          <div class="oc-headingBlock">
+            <h2 i18n:translate="project_tour_communicate">Communicate</h2>
+            <p class="oc-headingContext" i18n:translate="project_tour_announce">Announce your <span i18n:name="project_noun" tal:replace="view/project_noun">project</span>.</p>
+          </div>
+
+          <div class="oc-tour-feature">
+            <a tal:attributes="href string:${context/absolute_url}/project-home">
+              <img src="++resource++img/touricons/wiki.gif" class="oc-tour-icon" />
+            </a>
+            <h3><a tal:attributes="href string:${context/absolute_url}/project-home"
+                     i18n:translate="project_tour_wiki">Wiki pages</a></h3>
+            <ul class="oc-discreetText oc-plainList">
+              <li i18n:translate="project_tour_wiki_infodump">A blank canvas for key information</li>
+              <li i18n:translate="project_tour_wiki_collaborate">Write collaboratively</li>
+              <li i18n:translate="project_tour_wiki_brainstorm">Sketch out your goals</li>
+              <li i18n:translate="project_tour_wiki_media">Share photos</li>
+            </ul>
+          </div>
+
+          <div tal:condition="view/has_blog" class="oc-tour-feature">
+            <a tal:attributes="href string:${context/absolute_url}/blog">
+              <img src="++resource++img/touricons/blog.gif" class="oc-tour-icon" />
+            </a>
+            <h3><a tal:attributes="href string:${context/absolute_url}/blog"
+                 i18n:translate="project_tour_blog">Blog</a></h3>
+            <ul class="oc-discreetText oc-plainList">
+              <li i18n:translate="project_tour_blog_publish">Publish updates</li>
+              <li i18n:translate="project_tour_blog_buzz">Attract attention</li>
+              <li i18n:translate="project_tour_blog_advocate">Speak out</li>
+            </ul>
+          </div>
+
+        </div>
+        
+        <div class="oc-boxy">
+          <div class="oc-headingBlock oc-tour-feature-heading">
+            <h2 i18n:translate="project_tour_organize">Organize</h2>
+            <p class="oc-headingContext" i18n:translate="project_tour_organize_team">Keep your team organized and on-track.</p>
+          </div>
+
+          <div class="oc-tour-feature">
+            <a tal:attributes="href string:${context/absolute_url}/manage-team">
+              <img src="++resource++img/touricons/team.gif" class="oc-tour-icon" />
+            </a>
+            <h3 i18n:translate="project_tour_team"
+                tal:attributes="href string:${context/absolute_url}/manage-team"><a tal:attributes="href string:${context/absolute_url}/manage-team">Manage your team</a></h3>
+            <ul class="oc-discreetText oc-plainList">
+              <li i18n:translate="project_tour_team_invite">Invite people to join this <span i18n:name="project_noun" tal:replace="view/project_noun" /></li>
+              <li i18n:translate="project_tour_team_invite_again">Build momentum</li>
+              <li i18n:translate="project_tour_team_invite_again_kinda">Find collaborators</li>
+            </ul>
+          </div>
+        
+          <div tal:condition="view/has_mailing_lists" class="oc-tour-feature">
+            <a tal:attributes="href string:${context/absolute_url}/lists">
+              <img src="++resource++img/touricons/mailinglist.gif" class="oc-tour-icon" />
+            </a>
+            <h3><a i18n:translate="project_tour_mailinglists"
+                   tal:attributes="href string:${context/absolute_url}/lists">Mailing lists</a></h3>
+            <ul class="oc-discreetText oc-plainList">
+              <li i18n:translate="project_tour_mailinglists_update">Keep everyone up-to-date</li>
+              <li i18n:translate="project_tour_mailinglists_discuss">Promote discussions</li>
+              <li i18n:translate="project_tour_mailinglists_engage">Call supporters to action</li>
+            </ul>
+          </div>
+        
+          <div tal:condition="view/has_task_tracker" class="oc-tour-feature">
+            <a tal:attributes="href string:${context/absolute_url}/tasks">
+              <img src="++resource++img/touricons/tasks.gif" class="oc-tour-icon" />
+            </a>
+            <h3><a tal:attributes="href string:${context/absolute_url}/tasks" i18n:translate="project_tour_tasktracker">Task Tracker</a></h3>
+            <ul class="oc-discreetText oc-plainList">
+              <li i18n:translate="project_tour_tasktracker_share">Share to-do lists</li>
+              <li i18n:translate="project_tour_tasktracker_delegate">Assign tasks to others</li>
+              <li i18n:translate="project_tour_tasktracker_track">Keep track of progress</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div><!-- end #oc-content-main -->
+      
+      <div id="oc-content-sidebar">
+	<p class="oc-smallText" i18n:translate="project_tour_preferences"
+	   tal:define="project_prefs_url string:${context/absolute_url}/preferences"
+	   >
+	  <!-- this is a hacky way to get the 'project_prefs_url' key into the i18n mapping,
+	       so that it can be used in the anchor href below. i don't know of a cleaner
+	       way to do this, unfortunately -->
+	    <tal:comment i18n:name="project_prefs_url" replace="nothing">
+	      <tal:dummy replace="project_prefs_url" />
+	    </tal:comment>
+
+	  Want to add or remove tools from your <span tal:replace="view/project_noun" i18n:name="project_noun">project</span>?
+	  Change your <a tal:attributes="href project_prefs_url">preferences</a>.
+	</p>
+
+      </div><!-- end #oc-content-sidebar -->
+
+    </div><!-- content-fill-slot -->
+  </body>
+</html>

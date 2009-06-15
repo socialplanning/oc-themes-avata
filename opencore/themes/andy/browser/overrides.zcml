@@ -47,4 +47,20 @@
      template="home.pt"
      />
 
+  <browser:page
+     for="opencore.interfaces.IProject"
+     class="opencore.project.browser.latest_activity.LatestActivityView"
+     permission="zope2.View"
+     name="summary"
+     template="latest_activity.pt"
+     />
+
+  <browser:page
+     for="opencore.interfaces.IProject"
+     class="opencore.project.browser.TourView"
+     permission="cmf.ModifyPortalContent"
+     name="tour"
+     template="tour.pt"
+     />
+
 </configure>
