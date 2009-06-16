@@ -8,24 +8,24 @@
 
  <!-- Using a skin allows us to layer images, etc. on top of the opencore ones -->
  <!-- just hit zope at a url like so:
-       uri_template = http://localhost:8001/VirtualHostBase/{wsgi.url_scheme}/{HTTP_HOST}/++skin++andy/openplans/VirtualHostRoot{vh_SCRIPT_NAME}
+       uri_template = http://localhost:8001/VirtualHostBase/{wsgi.url_scheme}/{HTTP_HOST}/++skin++avata/openplans/VirtualHostRoot{vh_SCRIPT_NAME}
 -->
  <interface
-    interface=".interfaces.IAndySkin"
+    interface=".interfaces.IAvataSkin"
     type="zope.publisher.interfaces.browser.IBrowserSkinType"
-    name="andy"
+    name="avata"
     />
 
   <browser:resourceDirectory
      name="css"
      directory="css"
-     layer=".interfaces.IAndySkin"
+     layer=".interfaces.IAvataSkin"
      />
 
   <browser:resourceDirectory
      name="img"
      directory="img"
-     layer=".interfaces.IAndySkin"
+     layer=".interfaces.IAvataSkin"
      />
 
 

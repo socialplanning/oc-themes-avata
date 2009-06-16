@@ -4,7 +4,7 @@ import os
 version = '0.1dev'
 
 setup(
-    name='oc-themes-andy',
+    name='oc-themes-avata',
     version=version,
     description='',
     classifiers=[
@@ -31,8 +31,8 @@ setup(
       [distutils.commands]
       zinstall = topp.utils.setup_command:zinstall
       [opencore.versions]
-      oc-themes-andy = opencore.themes.andy
+      oc-themes-avata = opencore.themes.avata
       [topp.zcmlloader]
-      opencore = opencore.themes.andy
+      opencore = opencore.themes.avata
         """,
     )

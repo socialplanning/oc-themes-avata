@@ -6,6 +6,6 @@
     i18n_domain="zope"
     >
 
-  <include package="opencore.themes.andy" file="overrides.zcml"
+  <include package="opencore.themes.avata" file="overrides.zcml"
 
 </configure>
