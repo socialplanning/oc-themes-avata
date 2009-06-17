@@ -61,6 +61,7 @@
      permission="zope2.View"
      name="view"
      template="home.pt"
+     layer=".interfaces.IAvataSkin"
      />
 
   <browser:page
