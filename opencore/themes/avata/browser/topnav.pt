@@ -1,4 +1,4 @@
-<div id="oc-topnav">
+<div id="oc-topnav" i18n:domain="opencore">
 
   <h1 tal:define="piv context/@@project_info">
    <tal:in-project condition="piv/inProject">
@@ -19,7 +19,7 @@
       tal:condition="not:piv/inProject" />
   </h1>
 
-  <h2 tal:condition="python:not view.piv.inProject" id="tagline">Do good, better.<span> OpenPlans is a platform for social activism.</span></h2>
+  <h2 tal:condition="python:not view.piv.inProject" id="tagline" i18n:translate="topnav_subhead">Do good, better. <span><span i18n:name="portal_title" tal:replace="view/portal_title">CoActivate</span> is a platform for social activism.</span></h2>
 
   <tal:comment replace="nothing">
     <!-- old topnav generation -->
