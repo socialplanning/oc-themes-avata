@@ -280,9 +280,11 @@ div#oc-topnav-usermenu-container {
 /*-- Non-Project Header
 ------------------------------------------*/
 
-body.non-project ul#oc-usermenu-explore li.home {
+/* body.non-project ul#oc-usermenu-explore li.home {
 	display: none;
 	}
+*/
+
 body.non-project div#oc-topnav ul#oc-topnav-context {
 	display: none;
 	}
