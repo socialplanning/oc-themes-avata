@@ -8,12 +8,12 @@ body {
 	}
 
 a, a:link, a:visited {
-	color: #8fbf00;
+	color: #599900;
 	text-decoration: underline;
 	}
 
 a:hover, a:focus {
-	color: #8fbf00;
+	color: #599900;
 	}
 
 a:focus, a:active {
@@ -81,7 +81,7 @@ div#oc-topnav ul#oc-topnav-context {
 	}
 
 div#oc-topnav ul#oc-topnav-context li {
-	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
+	background: #599900 url("/++resource++img/green-tabs.png") top left repeat-x;
 	margin:0 1px 0 0;
 	}
 
@@ -243,7 +243,7 @@ div#oc-topnav-usermenu-container {
 
 
 			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
-				background: #8fbf00 url("/++resource++img/my-coactivate.png") top left no-repeat;
+				background: #599900 url("/++resource++img/my-coactivate.png") top left no-repeat;
 				border-width: 0;
 				position: absolute;
 				top: 4px;
@@ -405,7 +405,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 		}
 	
 	.oc-feed-title a:hover, .oc-feed-title a:focus {
-		color: #8fbf00;
+		color: #599900;
 		}
 
 .oc-widget-feed .oc-paginator {color:#b36521;}
@@ -439,7 +439,7 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 	}
 
 a.oc-banana {
-	background: #8fbf00 url("/++resource++img/green-tabs.png") top left repeat-x;
+	background: #599900 url("/++resource++img/green-tabs.png") top left repeat-x;
 	border-width: 0 0 0 0;
 	color: #FFFFFF !important;
 	padding: 8px 10px 4px;
@@ -459,7 +459,7 @@ a.oc-liveItem_showForm,
 a.oc-liveItem_showForm:visited, 
 a.oc-actionLink, 
 a.oc-actionLink:visited {
-	background-color:#8fbf00;
+	background-color:#599900;
 	color: #ffffff;
 	text-decoration:none;
 	text-transform:uppercase;
