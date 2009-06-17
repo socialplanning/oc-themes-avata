@@ -28,8 +28,6 @@ setup(
         ],
     entry_points="""
       # -*- Entry points: -*-
-      [distutils.commands]
-      zinstall = topp.utils.setup_command:zinstall
       [opencore.versions]
       oc-themes-avata = opencore.themes.avata
       [topp.zcmlloader]
