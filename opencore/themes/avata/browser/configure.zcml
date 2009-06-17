@@ -3,7 +3,7 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:meta="http://namespaces.zope.org/meta"
-    i18n_domain="zope"
+    i18n_domain="opencore"
     >
 
  <!-- Using a skin allows us to layer images, etc. on top of the opencore ones -->
