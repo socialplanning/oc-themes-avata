@@ -28,5 +28,87 @@
      layer=".interfaces.IAvataSkin"
      />
 
+  <browser:page
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class="opencore.nui.main.search.HomeView"
+     permission="zope2.View"
+     name="view"
+     template="home.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.TopNavView"
+     permission="zope2.View"
+     name="oc-topnav"
+     template="topnav.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AuthMenuView"
+     permission="zope2.View"
+     name="topnav-mystuff-menu"
+     template="mystuff-menu.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AuthMenuView"
+     permission="zope2.View"
+     name="topnav-auth-user-menu"
+     template="user-menu.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AnonMenuView"
+     permission="zope2.View"
+     name="topnav-anon-user-menu"
+     template="user-menu.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.base.BaseView"
+     permission="zope2.View"
+     name="topnav-explore-menu"
+     template="explore-menu.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:viewlet
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".views.GetStarted"
+     name="opencore.getstarted"
+     manager="opencore.project.browser.interfaces.IProjectSidebar"
+     permission="zope2.View"
+     view="opencore.nui.main.search.HomeView"
+     layer=".interfaces.IAvataSkin"
+     />
+
+
+  <browser:page
+     for="opencore.interfaces.IProject"
+     class="opencore.project.browser.latest_activity.LatestActivityView"
+     permission="zope2.View"
+     name="summary"
+     template="latest_activity.pt"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:page
+     for="opencore.interfaces.IProject"
+     class="opencore.project.browser.TourView"
+     permission="cmf.ModifyPortalContent"
+     name="tour"
+     template="tour.pt"
+     layer=".interfaces.IAvataSkin"
+     />
 
 </configure>
