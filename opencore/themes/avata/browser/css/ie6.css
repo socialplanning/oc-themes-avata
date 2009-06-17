@@ -28,3 +28,9 @@ h2.oc-dataTable-heading {
 .oc-dropdown-list li.oc-dropdown-container li a {
   width: 100%;
 }
+
+* html body.non-project #oc-topnav h2,
+* html body.non-project #oc-topnav h1 {
+zoom: 1;
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1 ? (this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')", this.src = "transparent.gif") : (this.origBg = this.origBg ? this.origBg : this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''), this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='" + (this.currentStyle.backgroundRepeat=='no-repeat' ? 'crop' : 'scale') +"')", this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}

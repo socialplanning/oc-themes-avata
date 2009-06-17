@@ -8,12 +8,11 @@ body {
 	}
 
 a, a:link, a:visited {
-	color: #599900;
-	text-decoration: underline;
+	color: #6ba12a;
 	}
 
 a:hover, a:focus {
-	color: #599900;
+	color: #6ba12a;
 	}
 
 a:focus, a:active {
@@ -28,7 +27,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .oc-legend-heading, .oc-la
 	}
 
 #oc-content-wrapper {
-	background: #f2f2f2 url("/++resource++img/content-wrapper.png") top left repeat-x;
+	/*-- background: #f2f2f2 url("/++resource++img/content-wrapper.png") top left repeat-x; */
+	background-color: #ffffff;
 	}
 
 #oc-content-main {
@@ -86,7 +86,8 @@ div#oc-topnav ul#oc-topnav-context li {
 	}
 
 div#oc-topnav ul#oc-topnav-context li:hover {
-	background-color: #a1d64f;
+	background: #599900 url("/++resource++img/green-tabs.png") bottom left repeat-x;
+	background-color: #b5d900;
 	}
 
 div#oc-topnav ul#oc-topnav-context li.oc-topnav-selected {
@@ -148,11 +149,14 @@ div#oc-topnav div#oc-topnav-tab a:focus {
 div#oc-topnav-globalmenu-container {
 	text-align: left;
 	float: left;
+	margin: 0;
+	padding: 0;
 	}
 
 ul#oc-topnav-globalmenu {
 	font-size: 12px;
-	margin: 0 0;
+	margin: 0;
+	padding: 0;
 	text-transform: none;
 	float: left;
 	}
@@ -162,7 +166,7 @@ ul#oc-topnav-globalmenu {
 		cursor: auto;
 		padding: 7px 0 0 13px;
 		margin: 0 0 0 0;
-		float: none;
+		float: left;
 		}
 	
 	ul#oc-usermenu-explore {
@@ -173,6 +177,7 @@ ul#oc-topnav-globalmenu {
 		left: 0;
 		width: auto;
 		padding-left: 0;
+		margin: 0;
 		}
 	
 	ul#oc-usermenu-explore li {
@@ -196,7 +201,7 @@ ul#oc-topnav-globalmenu {
 		}
 
 	ul#oc-usermenu-explore li.home a {
-		background: transparent url("/++resource++img/small-logo.png");
+		background: transparent url("/++resource++img/small-logo.png") 0 0 no-repeat;
 		width: 131px;
 		height: 26px;
 		text-indent: -9999px;
@@ -243,7 +248,7 @@ div#oc-topnav-usermenu-container {
 
 
 			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
-				background: #599900 url("/++resource++img/my-coactivate.png") top left no-repeat;
+				background: #6ba12a url("/++resource++img/my-coactivate.png") top left no-repeat;
 				border-width: 0;
 				position: absolute;
 				top: 4px;
@@ -252,6 +257,10 @@ div#oc-topnav-usermenu-container {
 				width: 120px;
 				padding: 24px 0 0;
 				z-index: 1000;
+				}
+
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff:hover {
+				background-image: url("/++resource++img/my-coactivate-up.png");
 				}
 
 				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li {
@@ -301,10 +310,12 @@ body.non-project #oc-topnav h1 {
 body.non-project #oc-topnav h1 a {
 	text-indent: -9999px;
 	float: right;
-	width: 326px;
+	width: 365px;
 	height: 64px;
 	padding: 0 0;
 	margin: 13px 13px 0 0;
+	position: relative;
+	z-index: 200;
 	}
 
 body.non-project #oc-topnav h2 {
@@ -381,19 +392,23 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 /*-- Content
 ------------------------------------------*/
 
-.oc-discreetText {color:#eb852b;}
+.oc-columnGroup, .oc-home-columnGroup {
+	width:100%;
+	}
+
+.oc-discreetText {
+	color:#eb852b;
+	}
 
 #oc-content-container {
 	padding: 2em 1em 1em;
 	}
 
 .oc-feed-title {
-	background-color: transparent;
-	background-image: none;
-	color: #eb852b;
-	font-size: 22px;
-	font-weight: bold;
-	padding-left: 0;
+	background: #332f2a url("/++resource++img/header.png") top left repeat-x scroll;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0.5em;
 	}
 
 	.oc-feed-title:after {
@@ -401,17 +416,23 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 		}
 
 	.oc-feed-title a:link, .oc-feed-title a:visited {
-		color: #b36521;
+/*		color: #b36521; */
 		}
 	
 	.oc-feed-title a:hover, .oc-feed-title a:focus {
-		color: #599900;
+/*		color: #599900; */
 		}
 
-.oc-widget-feed .oc-paginator {color:#b36521;}
+#oc-home-news h2 {
+	}
+
+.oc-widget-feed .oc-paginator {
+	color:#b36521;
+	}
 
 .oc-message, .oc-statusMessage {
-	background: #e6e6e6 url("/++resource++img/header2.png") top left repeat-x;
+/*	background: #e6e6e6 url("/++resource++img/header2.png") top left repeat-x; */
+	background-color: #F9F9F9;
 	border: 3px solid #eb852b;
 	color: #eb852b;
 	font-weight:bold;
@@ -448,7 +469,8 @@ a.oc-banana {
 	}
 
 a.oc-banana:hover {
-	background-color: #a1d64f;
+	background: #599900 url("/++resource++img/green-tabs.png") bottom left repeat-x;
+	background-color: #b5d900;
 	}
 
 .oc-dataTable {
@@ -529,10 +551,6 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 ------------------------------------------*/
 
 #oc-content-sidebar h2 {
-	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
-	color: #eb852b;
-	padding: .6em;
-	font-size: 20px;
 	}
 
 
@@ -554,48 +572,38 @@ h1, .oc-biggestText, .oc-legend-heading.oc-biggestText {
 #oc-home-getstarted {
 	}
 
+
 	#oc-home-getstarted h2 {
-		background: transparent url("/++resource++img/get-started.gif") top left no-repeat;
-		text-indent: -9999px;
-		float: left;
-		width: 147px;
-		height: 49px;
+		display: none;
 		}
 
-	#oc-home-getstarted li.get-started-projects {
-		background: transparent url("/++resource++img/get-started-projects.gif") center left no-repeat;
-		padding: 10px 0 10px 30px;
-		margin-left: 150px;
-		margin-top: 10px;
+	#oc-home-getstarted ul.oc-getstarted-list {
+		background: transparent url("/++resource++img/get-started.gif") bottom left no-repeat;
 		}
 
-	#oc-home-getstarted li.get-started-people {
-		background: transparent url("/++resource++img/get-started-people.gif") center left no-repeat;
-		padding: 10px 0 10px 30px;
-		margin-left: 150px;
-		}
-
-		#oc-home-getstarted li.get-started-projects a, 
-		#oc-home-getstarted li.get-started-people a {
-			font-size: 16px;
-			text-decoration: underline;
-			line-height: 1;
+		#oc-home-getstarted li.get-started-projects {
+			background: transparent url("/++resource++img/get-started-projects.gif") center left no-repeat;
+			padding: 10px 0 10px 30px;
+			margin-left: 150px;
+			margin-top: 10px;
 			}
-
-		#oc-home-getstarted li.get-started-projects a:hover, 
-		#oc-home-getstarted li.get-started-people a:hover {
+	
+		#oc-home-getstarted li.get-started-people {
+			background: transparent url("/++resource++img/get-started-people.gif") center left no-repeat;
+			padding: 10px 0 10px 30px;
+			margin-left: 150px;
 			}
-
-#oc-home-news h2 {
-	background: #F2F2F2 url("/++resource++img/diagonal-tile-white.gif") top left repeat;
-	color: #eb852b;
-	padding: .6em;
-	}
-
-#oc-home-news h2 a {
-	color: #eb852b;
-	}
-
+	
+			#oc-home-getstarted li.get-started-projects a, 
+			#oc-home-getstarted li.get-started-people a {
+				font-size: 16px;
+				text-decoration: underline;
+				line-height: 1;
+				}
+	
+			#oc-home-getstarted li.get-started-projects a:hover, 
+			#oc-home-getstarted li.get-started-people a:hover {
+				}
 
 /*-- Project Tour Page
 ------------------------------------------*/
