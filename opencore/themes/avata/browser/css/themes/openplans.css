@@ -35,8 +35,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .oc-legend-heading, .oc-la
 	}
 
 #oc-topnav, #oc-content-container, #oc-footer {
+	max-width: 1160px;
+	min-width: 960px;
 	}
 
+abbr {
+	border-bottom: 1px dotted #EB852B;
+	}
 
 /*-- Header 
 ------------------------------------------*/
@@ -235,7 +240,7 @@ div#oc-topnav-usermenu-container {
 		}
 
 	div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
-		padding: 7px 138px 0 20px;
+		padding: 7px 168px 0 20px;
 		font-size: 12px;
 		}
 
@@ -243,24 +248,52 @@ div#oc-topnav-usermenu-container {
 			font-weight: normal;
 			position: static;
 			font-weight: bold;
-			margin-right: 12px;
 			}
 
 
 			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
-				background: #6ba12a url("/++resource++img/my-coactivate.png") top left no-repeat;
+				background: #6ba12a url("/++resource++img/my-coactivate-wider.png") top left no-repeat;
 				border-width: 0;
 				position: absolute;
 				top: 4px;
 				right: 10px;
 				left: auto;
-				width: 120px;
+				width: 150px;
 				padding: 24px 0 0;
 				z-index: 1000;
 				}
+				
+			* html div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff {
+			  height: 24px;
+			  padding: 0;
+			}
+			
+			* html div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff:hover {
+			  padding: 24px 0 0;
+			}
+
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li#messagecount {
+				display: inline;
+				position: absolute;
+				top: 2px;
+				left: 107px;
+				padding: 0;
+				margin: 0;
+				color: #ffd6b2;
+				width: auto;
+				}
+
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li .oc-usermenu-messagecount, 
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li .oc-mystuff-messagecount {
+				color: #ffd6b2;
+				}
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a:hover .oc-usermenu-messagecount, 
+			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a:hover .oc-mystuff-messagecount {
+				color: #fff;
+				}
 
 			div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff:hover {
-				background-image: url("/++resource++img/my-coactivate-up.png");
+				background-position: top right;
 				}
 
 				div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li {
@@ -278,6 +311,7 @@ div#oc-topnav-usermenu-container {
 					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a {
 						padding: 3px 6px;
 						display: block;
+						background: #6ba12a;
 						}
 
 					div#oc-topnav-usermenu-container ul#oc-topnav-usermenu ul#oc-usermenu-mystuff li a:hover {
@@ -677,4 +711,41 @@ body.oc-wiki-content {
 
 #oc-tasktracker h1 {
 	margin-top: 0;
+	}
+
+/*-- Team Members
+------------------------------------------*/
+
+div#oc-feed-team {
+	}
+
+div#oc-feed-team ul.oc-lineup-list {
+	padding-top: 10px;
+	}
+
+div#oc-feed-team ul.oc-lineup-list li.oc-feed-item {
+	float: left;
+	width: 33%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	}
+
+div#oc-feed-team ul.oc-lineup-list li.oc-feed-item p {
+	height: 110px;
+	border: 1px solid #eeeeee;
+	margin: 0 10px 10px 0;
+	padding: 10px 0 0;
+	}
+
+div#oc-feed-team ul.oc-lineup-list li.oc-feed-item p a {
+	display: block;
+	}
+
+div#oc-feed-team ul.oc-lineup-list li.oc-feed-item p a img {
+	margin: 0 0 5px 0;
+	}
+
+div#oc-feed-team ul.oc-lineup-list li.oc-feed-item p a span.oc-feed-item-data {
 	}

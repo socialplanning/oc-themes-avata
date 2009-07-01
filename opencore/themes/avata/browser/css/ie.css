@@ -1,10 +1,9 @@
 #oc-topnav { 
   width: 78em;
 }	
-#oc-content-container {
-  width: 78em;
-}
-
+#oc-topnav, #oc-content-container, #oc-footer {
+	width: 960px;
+	}
 
 .oc-clearAfter { height: 1%; }
 		
