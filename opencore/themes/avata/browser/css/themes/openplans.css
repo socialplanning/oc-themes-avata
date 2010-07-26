@@ -1,3 +1,32 @@
+.oc-boxy {
+  background-color: #F9F9F9;
+  padding: 1em;
+}
+#oc-content-sidebar .oc-boxy h1,
+#oc-content-sidebar .oc-boxy h2 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px dotted #E6D3C0;
+}
+#oc-join-form fieldset.oc-boxy,
+#oc-login-form fieldset.oc-boxy {
+  margin-top: -0.75em;
+}
+.oc-widget-search,
+#oc-content-sidebar .oc-widget-search,
+#oc-content-sidebar .oc-widget-search.oc-boxy {
+  border: 1px solid #E6D3C0;
+  padding: 1em;
+}
+.oc-widget-alphabet,
+#oc-content-sidebar ul.oc-widget-alphabet.oc-boxy {
+  border: none;
+  border-top: 1px dotted #332F2A;
+  background: none;
+  padding: 0;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+
 #oc-blog-wrapper .oc-boxy {
   background-color: #f9f9f9;
   padding: 1em;
