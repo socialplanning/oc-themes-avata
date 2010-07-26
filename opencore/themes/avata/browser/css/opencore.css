@@ -33,9 +33,6 @@ body {
  min-width: 52em;
  margin: 0 auto;
 }
-#oc-page-container {
-
-}
 #oc-topnav {
   padding: 0;
   padding: 0.5em 1em;
@@ -61,10 +58,6 @@ body {
   padding: 0;
   overflow: hidden;
   line-height: 1.35em;
-}
-#oc-project-tabs {
-}
-#oc-project-content {
 }
 #oc-footer {
   clear: both;
@@ -97,8 +90,6 @@ ul#oc-topnav-context li {
 ul#oc-topnav-context li a {
   padding: .25em .5em;
 }
-#oc-topnav a:hover {
-}
 ul#oc-topnav-context {
   font-weight: bold;
   font-size: 10px;
@@ -108,8 +99,6 @@ ul#oc-topnav-context li {
   margin: 0 0.25em;
   padding: 0;
   background: #665D55;
-}
-ul#oc-topnav-context li.oc-topnav-selected {
 }
 #oc-topnav-tab {
   position: absolute;
@@ -173,27 +162,27 @@ text-align: left;
 .oc-dropdown-list li a:hover {
   text-decoration: underline;
 }
-.oc-dropdown-list li.oc-dropdown-container {
+.oc-dropdown-list .oc-dropdown-container {
   position: relative;
   background: url("/++resource++img/dropdown-nub-closed.gif") no-repeat 98% 7px;
   padding-right: 15px;
   cursor: pointer;
 }
-.oc-dropdown-list li.oc-dropdown-container.oc-hover {
+.oc-dropdown-list .oc-dropdown-container.oc-hover {
   border-bottom: none;
   background-color: transparent;
 }
-.oc-dropdown-list li.oc-dropdown-container.oc-hover a {
+.oc-dropdown-list .oc-dropdown-container.oc-hover a {
   background: transparent;
 }
-.oc-dropdown-list ul li.oc-dropdown-container.oc-hover {
+.oc-dropdown-list .oc-dropdown-container.oc-hover {
   border: none;
 }
-.oc-dropdown-list li.oc-dropdown-container.oc-selected {
+.oc-dropdown-list .oc-dropdown-container.oc-selected {
   background: url("/++resource++img/dropdown-nub-open.gif") no-repeat 98% 7px;
   border-bottom: none;
 }
-.oc-dropdown-list li.oc-dropdown-container ul {
+.oc-dropdown-list .oc-dropdown-container ul {
   position: absolute;
   top: 1.8em;
   left: 0;
@@ -206,7 +195,7 @@ text-align: left;
   border-bottom: 2px solid #332F2A;
   z-index: 1000;
 }
-.oc-dropdown-list li.oc-dropdown-container li {
+.oc-dropdown-list .oc-dropdown-container li {
   float: left;
   list-style: none;
   clear: left;
@@ -215,12 +204,12 @@ text-align: left;
   margin: 0;
   border: none;
 }
-.oc-dropdown-list li.oc-dropdown-container li a {
+.oc-dropdown-list .oc-dropdown-container li a {
   display: block;
   margin: 0;
   padding: 0.125em .25em;
 }
-.oc-dropdown-list li.oc-dropdown-container li a:hover {
+.oc-dropdown-list .oc-dropdown-container li a:hover {
   background: #EB852B;
 }
 .oc-dropdown-list hr.oc-usermenu-divider {
@@ -479,13 +468,8 @@ border:1px solid #e6e6e6;
 }
 
 /* Portal Home */
-#oc-home-content {
-}
 #oc-home-content .oc-headingBlock h1{
   font-size: 36px;
-}
-#oc-home-getstarted {
-
 }
 .oc-columnGroup,
 .oc-home-columnGroup {
@@ -515,8 +499,6 @@ border:1px solid #e6e6e6;
 
 /* Member profile */
 
-#oc-member-badge {
-}
 #oc-member-badge .oc-avatar {
   overflow: hidden;
   float: left; 
@@ -567,8 +549,6 @@ dl.oc-member-info dd {
 
 /* Wiki pages */
 
-.oc-wiki {
-}
 .oc-wiki-headingBlock {
   margin: 0;
   margin-right: 1em;
@@ -626,8 +606,6 @@ ul.oc-tabs li.oc-notallowed a {
 }
 .oc-wiki-edit {
   clear: both;
-}
-.oc-wiki-edit-content {
 }
 .oc-actions.oc-wiki-actions {
   border-top: 2px solid #ccc;
@@ -753,8 +731,6 @@ a.wickedadd {
 
 /* About and 1 Page tours */
 
-.oc-about-toolkit {
-}
 .oc-about-tool {
   clear: left;
   margin: 0 2em 1em 0;
@@ -773,14 +749,6 @@ a.wickedadd {
 
 /* Listen */
 
-.oc-listen-details-subscribe {
-}
-.oc-listen-details-subscribe h2 {
-}
-.oc-listen-details-subscribe p {
-}
-.oc-listen-details-subscribe .oc-actions {
-}
 .oc-listen-archive-dateview {
 	padding: 0;
 	margin: 0;
@@ -856,7 +824,7 @@ The IE hacks take advantage of several IE non-compliance issues to clearAfter th
 #oc-topnav-global:after,
 #oc-page-container:after
 { 
-  content: ""; 
+  content: "";
   display: block; 
   height: 0; 
   clear: both;
@@ -1045,8 +1013,6 @@ fieldset .oc-heading-context {
   font-size: 10px;
 }
 
-.oc-form {
-}
 .oc-form * {
   vertical-align: top;
   border-collapse: collapse;
@@ -1080,8 +1046,6 @@ fieldset .oc-heading-context {
   color: #666;
   font-style: italic;
   display: block; /* in case an error message comes up under it */
-}
-.oc-form-validator {
 }
 .oc-form-error {
   color: #F00;
@@ -1183,8 +1147,6 @@ height: 1em; */
 .oc-widget .oc-headingBlock h2 {
   font-size: 14px;
 }
-.oc-widget .oc-headingContext {
-}
 
 /* List table */
 .oc-widget-dataTable {
@@ -1243,9 +1205,6 @@ height: 1em; */
   padding: .5em 0;
   margin:0;
   font-size: 10px;
-}
-.oc-dataTable-actions li {
-   
 }
 .oc-dataTable-paginator {
   float: right;
@@ -1311,7 +1270,8 @@ li.oc-feed-item {
 }
 li.oc-feed-item .oc-avatar,
 li.oc-feed-item .oc-project-logo,
-li.oc-invite .oc-project-logo {
+li.oc-invite .oc-project-logo,
+li.oc-listing-item .oc-project-logo {
   width: 64px;
   float: left;
   clear: none;
@@ -1369,18 +1329,12 @@ li.oc-invite .oc-avatar img {
 li.oc-invite .oc-invite-content {
    margin: 0 12em 0 0;
 }
-.oc-invite-actions {
-}
 .oc-invite-actions li {
    display: inline;
 }
 
 /* Search box */
 
-.oc-widget-search {
-}
-#oc-content-sidebar .oc-widget-search {
-}
 .oc-widget-search form input,
 .oc-widget-search form button {
   font-size: 10px;
@@ -1394,8 +1348,6 @@ li.oc-invite .oc-invite-content {
 .oc-widget-search h2,
 .oc-widget-search .oc-label-heading {
   margin: 0 0 0.5em;
-}
-.oc-widget-multiSearch {
 }
 .oc-widget-multiSearch ul.oc-inlineList {
 	margin: 0.5em 0;
