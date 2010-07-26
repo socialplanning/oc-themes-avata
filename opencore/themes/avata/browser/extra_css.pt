@@ -1,0 +1,6 @@
+    <!--[if IE]>
+      <link rel="stylesheet" href="/++resource++avata_css/ie.css" type="text/css" media="all" />
+    <![endif]-->
+    <!--[if IE 6]>
+      <link rel="stylesheet" href="/++resource++avata_css/ie6.css" type="text/css" media="all" />
+    <![endif]-->

@@ -17,7 +17,7 @@
     />
 
   <browser:resourceDirectory
-     name="css"
+     name="avata_css"
      directory="css"
      layer=".interfaces.IAvataSkin"
      />
@@ -25,6 +25,12 @@
   <browser:resourceDirectory
      name="img"
      directory="img"
+     layer=".interfaces.IAvataSkin"
+     />
+
+  <browser:resource
+     name="themes_openplans.css"
+     file="css/themes/openplans.css"
      layer=".interfaces.IAvataSkin"
      />
 
@@ -92,6 +98,14 @@
      layer=".interfaces.IAvataSkin"
      />
 
+  <browser:viewlet
+     for="*"
+     name="avata.css"
+     manager="opencore.browser.interfaces.IExtraHead"
+     permission="zope2.View"
+     template="extra_css.pt"
+     layer=".interfaces.IAvataSkin"
+     />
 
   <browser:page
      for="opencore.interfaces.IProject"
