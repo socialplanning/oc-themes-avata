@@ -1,3 +1,7 @@
+#oc-joining-explanation .oc-feed-item img {
+  height: 90px;
+  width: 88px;
+}
 .oc-boxy {
   background-color: #F9F9F9;
   padding: 1em;
