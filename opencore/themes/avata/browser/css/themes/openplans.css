@@ -445,6 +445,12 @@ body.anonymous div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 	padding: 0.5em;
 	}
 
+/* Member badges */
+#oc-member-badge,
+.oc-roster li.vcard {
+  background-color: #F6F6F6;
+}
+
 	.oc-feed-title:after {
 		content: " \00BB";
 		}
