@@ -283,17 +283,6 @@ dl.oc-plainList dd {
 .oc-inlineList li:last-child:after {
   content: "";
 }
-#oc-blog-wrapper .oc-boxy {
-  background-color: #f9f9f9;
-  padding: 1em;
-}
-#oc-blog-wrapper #oc-content-sidebar {
-  border-left: 1px solid lightgray;
-  padding-left: 0.5em;
-}
-#oc-blog-wrapper .oc-boxy h2 {
-  border-bottom: 1px dotted #e6d3c0;
-}
 .oc-boxy {
   margin-bottom: 1em;
 }

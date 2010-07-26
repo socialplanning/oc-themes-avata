@@ -1,3 +1,15 @@
+#oc-blog-wrapper .oc-boxy {
+  background-color: #f9f9f9;
+  padding: 1em;
+}
+#oc-blog-wrapper #oc-content-sidebar {
+  border-left: 1px solid lightgray;
+  padding-left: 0.5em;
+}
+#oc-blog-wrapper .oc-boxy h2 {
+  border-bottom: 1px dotted #e6d3c0;
+}
+
 body {
 	color: #332f2a;
 	padding: 0;
