@@ -15,7 +15,7 @@ body {
 	padding: 0;
 	background:  #4c4844;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 1.6;
 	}
 
@@ -121,7 +121,7 @@ div#oc-topnav ul#oc-topnav-context li a {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1;
 	}
 
@@ -171,7 +171,7 @@ div#oc-topnav-globalmenu-container {
 	}
 
 ul#oc-topnav-globalmenu {
-	font-size: 12px;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 	text-transform: none;
@@ -203,6 +203,7 @@ ul#oc-topnav-globalmenu {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		text-transform: capitalize;
 		}
 	
 	ul#oc-usermenu-explore li a {
@@ -223,6 +224,7 @@ ul#oc-topnav-globalmenu {
 		height: 26px;
 		text-indent: -9999px;
 		padding: 0;
+		margin-top: 5px;
 		}
 	
 #oc-topnav-tab form#oc-sitesearch {
@@ -253,7 +255,7 @@ div#oc-topnav-usermenu-container {
 
 	div#oc-topnav-usermenu-container ul#oc-topnav-usermenu {
 		padding: 7px 168px 0 20px;
-		font-size: 12px;
+		font-size: 16px;
 		}
 
 		div#oc-topnav-usermenu-container ul#oc-topnav-usermenu li {
