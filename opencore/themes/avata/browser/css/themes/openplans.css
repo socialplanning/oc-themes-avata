@@ -783,6 +783,7 @@ div#oc-feed-team ul.oc-lineup-list li.oc-feed-item {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+        height: 130px;
 	}
 
 div#oc-feed-team ul.oc-lineup-list li.oc-feed-item p {
