@@ -626,6 +626,10 @@ ul.oc-tabs li.oc-selected a.oc-actionLink:hover {
 		border: 1px solid #cacbcc;
 		}	
 
+div.oc-buttons ul.oc-lineup-list { 
+  border-bottom: none;
+}
+
 .oc-column, .oc-home-column {
 	margin: 0 3% 2em 0;
 	width: 46%;
