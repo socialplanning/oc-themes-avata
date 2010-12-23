@@ -158,23 +158,6 @@ div#oc-topnav ul#oc-topnav-context li a {
 	line-height: 1;
 	}
 
-div#oc-topnav ul#oc-topnav-context li.oc-topnav-join {
-	background: url("/++resource++img/join-project.png") top left no-repeat;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 144px;
-	height: 32px;
-	}
-
-	div#oc-topnav ul#oc-topnav-context li.oc-topnav-join a {
-		width: 144px;
-		height: 32px;
-		padding: 0;
-		margin: 0;
-		text-indent: -9999px;
-		}
-
 div#oc-topnav div#oc-topnav-tab {
 	background: transparent;
 	width: auto;
