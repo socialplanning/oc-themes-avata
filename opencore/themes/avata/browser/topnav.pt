@@ -48,7 +48,7 @@
              accesskey="4" class="oc-input-typeText"
              i18n:attributes="title topnav_site_search_label"
              />
-      <input class="button" name="searchsubmit" value="Find" tabindex="2" src="/++resource++img/search-button.png" align="middle" type="image">
+      <input class="button" name="searchsubmit" value="Find" tabindex="2" src="/++resource++img/search-button.png" align="middle" type="image" />
     </form>
     </div>
     
