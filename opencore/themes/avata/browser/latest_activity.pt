@@ -9,8 +9,8 @@
 
         <!-- project metadata -->
         <div class="oc-headingBlock oc-clearAfter">
-          <p class="oc-headingContext oc-discreetText" i18n:translate="">
-            created 
+          <p class="oc-headingContext oc-discreetText">
+            <tal:i18n i18n:translate="">created 
             <span tal:define="date context/CreationDate"
               	  tal:content="python:view.pretty_date(date)" i18n:name="creation_date">
               <tal:comment replace="nothing">September 26</tal:comment>
@@ -20,6 +20,7 @@
               	  tal:content="python:view.pretty_date(date)" i18n:name="modification_date">
               <tal:comment replace="nothing">yesterday</tal:comment>
             </span>
+            </tal:i18n>
             <a tal:condition="not: context/isProjectMember" 
                href="request-membership" class="oc-actionLink" i18n:translate="">Join</a>
             <a class="oc-actionLink" tal:condition="view/team_manager" 
