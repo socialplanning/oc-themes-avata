@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-16 00:18+0000\n"
+"POT-Creation-Date: 2020-01-07 14:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,35 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: opencore\n"
 
-#: ../browser/mystuff-menu.pt:28
-msgid "Account"
-msgstr ""
-
-#: ../browser/latest_activity.pt:56
+#: ../browser/latest_activity.pt:58
 msgid "Anyone can view this ${project_noun} and any ${portal_title} member can contribute to it"
 msgstr ""
 
-#: ../browser/latest_activity.pt:60
+#: ../browser/latest_activity.pt:62
 msgid "Anyone can view this ${project_noun} but only team members can contribute to it"
 msgstr ""
 
-#: ../browser/latest_activity.pt:26
+#: ../browser/latest_activity.pt:27
 msgid "EDIT"
 msgstr ""
 
-#: ../browser/latest_activity.pt:24
+#: ../browser/latest_activity.pt:25
 msgid "Join"
 msgstr ""
 
-#: ../browser/home.pt:86
+#: ../browser/home.pt:85
 msgid "News"
 msgstr ""
 
-#: ../browser/latest_activity.pt:65
+#: ../browser/latest_activity.pt:67
 msgid "Only team members can view, contribute, or search for this ${project_noun}"
 msgstr ""
 
-#: ../browser/mystuff-menu.pt:14
-msgid "Profile"
-msgstr ""
-
-#: ../browser/latest_activity.pt:52
+#: ../browser/latest_activity.pt:54
 msgid "Security"
 msgstr ""
 
-#: ../browser/mystuff-menu.pt:19
-msgid "Wiki"
-msgstr ""
-
-#: ../browser/latest_activity.pt:19
+#: ../browser/latest_activity.pt:20
 msgid "created ${creation_date}, last updated ${modification_date}"
 msgstr ""
 
@@ -77,52 +65,52 @@ msgid "get_started_login"
 msgstr ""
 
 #. Default: "Find people"
-#: ../browser/get-started.pt:20
+#: ../browser/get-started.pt:23
 msgid "get_started_people_search"
 msgstr ""
 
 #. Default: "Find ${project_noun}s"
-#: ../browser/get-started.pt:16
+#: ../browser/get-started.pt:17
 msgid "get_started_project_search"
 msgstr ""
 
 #. Default: "${portal_title} is the simple way to bring groups together, promote your cause, make plans, manage projects, and get things done. ${portal_title} offers free mailing lists, wikis, task tracking, team management, and blogs to help you build an online community and promote real-world change."
-#: ../browser/home.pt:19
+#: ../browser/home.pt:18
 msgid "home_functions_blurb"
 msgstr ""
 
 #. Default: "Newest ${project_noun}s"
-#: ../browser/home.pt:25
+#: ../browser/home.pt:24
 msgid "home_newest_projects"
 msgstr ""
 
 #. Default: "by"
-#: ../browser/home.pt:102
+#: ../browser/home.pt:100
 msgid "home_news_item_by"
 msgstr ""
 
 #. Default: "more news…"
-#: ../browser/home.pt:113
+#: ../browser/home.pt:111
 msgid "home_news_more_link"
 msgstr ""
 
 #. Default: "You want to <strong>make a difference</strong>. We want to <strong>make it easy</strong>."
-#: ../browser/home.pt:18
+#: ../browser/home.pt:17
 msgid "home_opening_blurb"
 msgstr ""
 
 #. Default: "created ${creation_date}"
-#: ../browser/home.pt:41
+#: ../browser/home.pt:40
 msgid "home_project_created"
 msgstr ""
 
 #. Default: "last updated ${project_updated}"
-#: ../browser/home.pt:73
+#: ../browser/home.pt:72
 msgid "home_project_updated"
 msgstr ""
 
 #. Default: "Updated ${project_noun}s"
-#: ../browser/home.pt:54
+#: ../browser/home.pt:53
 msgid "home_updated_projects"
 msgstr ""
 
@@ -131,12 +119,32 @@ msgstr ""
 msgid "home_window_title"
 msgstr ""
 
-#: ../browser/home.pt:69
+#. Default: "Summary - ${window_title}"
+#: ../browser/latest_activity.pt:4
+msgid "latest_activity_window_title"
+msgstr ""
+
+#: ../browser/home.pt:68
 msgid "member"
 msgstr ""
 
+#. Default: "Account"
+#: ../browser/mystuff-menu.pt:28
+msgid "mystuff_menu_account"
+msgstr ""
+
+#. Default: "Profile"
+#: ../browser/mystuff-menu.pt:14
+msgid "mystuff_menu_profile"
+msgstr ""
+
+#. Default: "Wiki"
+#: ../browser/mystuff-menu.pt:19
+msgid "mystuff_menu_wiki"
+msgstr ""
+
 #. Default: "${portal_title} News"
-#: ../browser/home.pt:90
+#: ../browser/home.pt:88
 msgid "news_section_heading"
 msgstr ""
 
@@ -145,8 +153,8 @@ msgid "or"
 msgstr ""
 
 #. Default: "preferences"
-#: ../browser/tour.pt:111
-msgid "project_prefs_url"
+#: ../browser/tour.pt:124
+msgid "project_preferences"
 msgstr ""
 
 #. Default: "Announce your ${project_noun}."
@@ -155,22 +163,22 @@ msgid "project_tour_announce"
 msgstr ""
 
 #. Default: "Blog"
-#: ../browser/tour.pt:41
+#: ../browser/tour.pt:44
 msgid "project_tour_blog"
 msgstr ""
 
 #. Default: "Speak out"
-#: ../browser/tour.pt:46
+#: ../browser/tour.pt:50
 msgid "project_tour_blog_advocate"
 msgstr ""
 
 #. Default: "Attract attention"
-#: ../browser/tour.pt:45
+#: ../browser/tour.pt:49
 msgid "project_tour_blog_buzz"
 msgstr ""
 
 #. Default: "Publish updates"
-#: ../browser/tour.pt:44
+#: ../browser/tour.pt:48
 msgid "project_tour_blog_publish"
 msgstr ""
 
@@ -190,107 +198,107 @@ msgid "project_tour_header_2"
 msgstr ""
 
 #. Default: "Mailing lists"
-#: ../browser/tour.pt:74
+#: ../browser/tour.pt:83
 msgid "project_tour_mailinglists"
 msgstr ""
 
 #. Default: "Promote discussions"
-#: ../browser/tour.pt:78
+#: ../browser/tour.pt:88
 msgid "project_tour_mailinglists_discuss"
 msgstr ""
 
 #. Default: "Call supporters to action"
-#: ../browser/tour.pt:79
+#: ../browser/tour.pt:89
 msgid "project_tour_mailinglists_engage"
 msgstr ""
 
 #. Default: "Keep everyone up-to-date"
-#: ../browser/tour.pt:77
+#: ../browser/tour.pt:87
 msgid "project_tour_mailinglists_update"
 msgstr ""
 
 #. Default: "Organize"
-#: ../browser/tour.pt:54
+#: ../browser/tour.pt:58
 msgid "project_tour_organize"
 msgstr ""
 
 #. Default: "Keep your team organized and on-track."
-#: ../browser/tour.pt:55
+#: ../browser/tour.pt:59
 msgid "project_tour_organize_team"
 msgstr ""
 
-#. Default: "<!-- this is a hacky way to get the 'project_prefs_url' key into the i18n mapping, so that it can be used in the anchor href below. i don't know of a cleaner way to do this, unfortunately --> ${project_prefs_url} x <a href=\"${DYNAMIC_CONTENT}\">x</a>."
-#: ../browser/tour.pt:111
+#. Default: "<!-- this is a hacky way to get the 'project_prefs_url' key into the i18n mapping, so that it can be used in the anchor href below. i don't know of a cleaner way to do this, unfortunately --> ${project_prefs_url} x ${project_prefs}."
+#: ../browser/tour.pt:124
 msgid "project_tour_preferences"
 msgstr ""
 
 #. Default: "Want to add or remove tools from your ${project_noun}? Change your"
-#: ../browser/tour.pt:110
+#: ../browser/tour.pt:123
 msgid "project_tour_preferences_msg"
 msgstr ""
 
 #. Default: "Task Tracker"
-#: ../browser/tour.pt:87
+#: ../browser/tour.pt:98
 msgid "project_tour_tasktracker"
 msgstr ""
 
 #. Default: "Assign tasks to others"
-#: ../browser/tour.pt:90
+#: ../browser/tour.pt:103
 msgid "project_tour_tasktracker_delegate"
 msgstr ""
 
 #. Default: "Share to-do lists"
-#: ../browser/tour.pt:89
+#: ../browser/tour.pt:102
 msgid "project_tour_tasktracker_share"
 msgstr ""
 
 #. Default: "Keep track of progress"
-#: ../browser/tour.pt:91
+#: ../browser/tour.pt:104
 msgid "project_tour_tasktracker_track"
 msgstr ""
 
 #. Default: "Manage your team"
-#: ../browser/tour.pt:62
+#: ../browser/tour.pt:68
 msgid "project_tour_team"
 msgstr ""
 
 #. Default: "Invite people to join this ${project_noun}"
-#: ../browser/tour.pt:64
+#: ../browser/tour.pt:72
 msgid "project_tour_team_invite"
 msgstr ""
 
 #. Default: "Build momentum"
-#: ../browser/tour.pt:65
+#: ../browser/tour.pt:73
 msgid "project_tour_team_invite_again"
 msgstr ""
 
 #. Default: "Find collaborators"
-#: ../browser/tour.pt:66
+#: ../browser/tour.pt:74
 msgid "project_tour_team_invite_again_kinda"
 msgstr ""
 
 #. Default: "Wiki pages"
-#: ../browser/tour.pt:27
+#: ../browser/tour.pt:28
 msgid "project_tour_wiki"
 msgstr ""
 
 #. Default: "Sketch out your goals"
-#: ../browser/tour.pt:32
+#: ../browser/tour.pt:34
 msgid "project_tour_wiki_brainstorm"
 msgstr ""
 
 #. Default: "Write collaboratively"
-#: ../browser/tour.pt:31
+#: ../browser/tour.pt:33
 msgid "project_tour_wiki_collaborate"
 msgstr ""
 
 #. Default: "A blank canvas for key information"
-#: ../browser/tour.pt:30
+#: ../browser/tour.pt:32
 msgid "project_tour_wiki_infodump"
 msgstr ""
 
 #. Default: "Share photos"
-#: ../browser/tour.pt:33
+#: ../browser/tour.pt:35
 msgid "project_tour_wiki_media"
 msgstr ""
 
@@ -300,32 +308,31 @@ msgid "project_tour_window_title"
 msgstr ""
 
 #. Default: "Home"
-#: ../browser/explore-menu.pt:5
+#: ../browser/explore-menu.pt:4
 msgid "topnav_explore_home"
 msgstr ""
 
 #. Default: "Start a ${project_noun}"
-#: ../browser/explore-menu.pt:27
+#: ../browser/explore-menu.pt:25
 msgid "topnav_explore_new_project"
 msgstr ""
 
 #. Default: "People"
-#: ../browser/explore-menu.pt:10
+#: ../browser/explore-menu.pt:9
 msgid "topnav_explore_people"
 msgstr ""
 
 #. Default: "${project_noun}s"
-#: ../browser/explore-menu.pt:17
+#: ../browser/explore-menu.pt:16
 msgid "topnav_explore_projects"
 msgstr ""
 
 #. Default: "Search site"
-#: ../browser/topnav.pt:46
+#: ../browser/topnav.pt:48
 msgid "topnav_site_search_label"
 msgstr ""
 
 #. Default: "Do good, better. <span>${portal_title} is a platform for social activism.</span>"
-#: ../browser/topnav.pt:22
+#: ../browser/topnav.pt:23
 msgid "topnav_subhead"
 msgstr ""
-
