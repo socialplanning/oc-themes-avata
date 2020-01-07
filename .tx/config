@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[social-planning.opencore-themes-avata-pot]
+file_filter = opencore/themes/avata/locales/<lang>/LC_MESSAGES/opencore.po
+minimum_perc = 0
+source_file = opencore/themes/avata/locales/opencore.pot
+source_lang = en
+type = PO
+
