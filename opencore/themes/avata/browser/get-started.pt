@@ -12,12 +12,17 @@
       </h3>
     </li>
     <li class="get-started-projects">
-      <h3><a tal:attributes="href string:${context/portal_url}/projects" i18n:translate="get_started_project_search">
-	  Find <span i18n:name="project_noun" tal:replace="view/project_noun">project</span>s</a>
+      <h3>
+    <a tal:attributes="href string:${context/portal_url}/projects" i18n:translate="get_started_project_search">
+      Find <span i18n:name="project_noun" tal:replace="view/project_noun">project</span>s
+        </a>
       </h3>  
     </li>
     <li class="get-started-people">
-      <h3><a tal:attributes="href string:${context/portal_url}/people" i18n:translate="get_started_people_search">Find people</a></h3>
+      <h3>
+    <a tal:attributes="href string:${context/portal_url}/people"
+           i18n:translate="get_started_people_search">Find people</a>
+      </h3>
     </li>
   </ul>
 </div>

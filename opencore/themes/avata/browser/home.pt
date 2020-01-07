@@ -4,7 +4,6 @@
     free project management tools, wikis, blogs, mailing lists and task
     tracking for neighborhood and global communities.
    </title>
-
     <metal:script fill-slot="meta">
       <meta name="keywords" content="free wikis, free mailing lists, free blogs, free task tracking, free project management" />
       <meta name="description" tal:attributes="content string:${view/portal_title} offers free tools to help you build an online community and promote real-world change"/>
@@ -67,7 +66,7 @@
                 </h3>
                 <p class="oc-feed-item-data oc-discreetText" tal:define="nmembers python: view.n_project_members(project)">
                   <span tal:replace="nmembers">YY</span> <tal:i18n i18n:translate="">member</tal:i18n>
-<span tal:condition="python: nmembers != 1" tal:replace="string:s" />
+                  <span tal:condition="python: nmembers != 1" tal:replace="string:s" />
                 </p>
                 <p class="oc-feed-item-data oc-discreetText" i18n:translate="home_project_updated">
                   last updated <span i18n:name="project_updated" tal:replace="python: view.pretty_date(project.ModificationDate)">Jan 1937</span>
@@ -83,12 +82,11 @@
         <tal:provider replace="structure provider:opencore.sidebar" />
           <div id="oc-home-news" class="oc-widget oc-widget-feed">
             <h2 class="oc-feed-title">
-              <a i18n:attributes="title News"
-		 title="News"
-		 href="news"
-		 i18n:translate="news_section_heading">
-		<tal:dummy i18n:name="portal_title" tal:content="view/portal_title" /> News
-	      </a>
+              <a href="news" title="News"
+                 i18n:attributes="title News"
+                 i18n:translate="news_section_heading">
+                    <tal:dummy i18n:name="portal_title" tal:content="view/portal_title" /> News
+                </a>
             </h2>
             <ul class="oc-lineup-list">
               <li tal:repeat="item view/news" class="oc-feed-item oc-clearAfter">
@@ -101,8 +99,8 @@
                 <div class="oc-feed-item-data oc-discreetText">
                   <tal:i18n i18n:translate="home_news_item_by">by</tal:i18n>
                   <a tal:define="userid item/Creator"
-		     tal:attributes="href string:${context/portal_url}/people/${userid}"
-		     tal:content="userid" />,
+                         tal:attributes="href string:${context/portal_url}/people/${userid}"
+                         tal:content="userid" />,
                   <span tal:replace="python: view.pretty_date(item.CreationDate)" />
                 </div>
                 <p class="oc-feed-item-description" tal:content="item/Description">
@@ -110,11 +108,11 @@
                 </p>
               </li>
               <li>
-                <a i18n:translate="home_news_more_link"
-		   class="oc-paginator"
-		   tal:attributes="href string:${context/portal_url}/news">
-		  more news&hellip;
-		</a>
+                <a class="oc-paginator"
+                   tal:attributes="href string:${context/portal_url}/news"
+                   i18n:translate="home_news_more_link">
+                       more news&hellip;
+                    </a>
               </li>
             </ul>
           </div><!-- CoActivate News -->
@@ -123,3 +121,4 @@
     </div><!-- content-fill-slot -->
   </body>
 </html>
+

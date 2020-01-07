@@ -1,7 +1,8 @@
 <html metal:use-macro="here/@@standard_macros/master" i18n:domain="opencore">
   <head>
-    <title metal:fill-slot="title" 
-           tal:content="string:Summary - ${view/window_title}" />
+    <title i18n:translate="latest_activity_window_title" metal:fill-slot="title">
+       Summary - <span i18n:name="window_title" tal:replace="view/window_title" />
+    </title>
   </head>
   <body>
     <div metal:fill-slot="content">
@@ -12,12 +13,12 @@
           <p class="oc-headingContext oc-discreetText">
             <tal:i18n i18n:translate="">created 
             <span tal:define="date context/CreationDate"
-              	  tal:content="python:view.pretty_date(date)" i18n:name="creation_date">
+                  tal:content="python:view.pretty_date(date)" i18n:name="creation_date">
               <tal:comment replace="nothing">September 26</tal:comment>
             </span>,
             last updated
             <span tal:define="date context/ModificationDate"
-              	  tal:content="python:view.pretty_date(date)" i18n:name="modification_date">
+                  tal:content="python:view.pretty_date(date)" i18n:name="modification_date">
               <tal:comment replace="nothing">yesterday</tal:comment>
             </span>
             </tal:i18n>
@@ -30,14 +31,14 @@
         </div>
 
         <!-- feeds -->      
-	<div class="oc-columnGroup">
+    <div class="oc-columnGroup">
 
           <tal:feeds replace="structure provider:opencore.feed_summaries">
             Rendering happens with viewlets in featurelet packages
           </tal:feeds>
 
-	</div>
-      </div><!-- content-main -->     	
+    </div>
+      </div><!-- content-main -->
       
       <div id="oc-content-sidebar">  
 
@@ -49,8 +50,9 @@
         </div>
         
         <!-- display project security settings -->
-        <h2><tal:i18n i18n:translate="">Security</tal:i18n> <a class="oc-actionLink" tal:condition="view/team_manager" href="preferences" 
-          i18n:translate="">EDIT</a></h2>
+        <h2>
+          <tal:i18n i18n:translate="">Security</tal:i18n> <a class="oc-actionLink" tal:condition="view/team_manager" href="preferences" i18n:translate="">EDIT</a>
+        </h2>
         <p tal:condition="python:view.project_info['security'] == 'open_policy'" i18n:translate="">
           Anyone can view this <span tal:replace="view/project_noun" i18n:name="project_noun">project</span> and
           any <span tal:replace="view/portal_title" i18n:name="portal_title">site</span>
@@ -72,3 +74,4 @@
     </div><!-- content-fill-slot -->
   </body>
 </html>
+

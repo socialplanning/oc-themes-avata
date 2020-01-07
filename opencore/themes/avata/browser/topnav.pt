@@ -19,7 +19,9 @@
       tal:condition="not:piv/inProject" />
   </h1>
 
-  <h2 tal:condition="python:not view.piv.inProject" id="tagline" i18n:translate="topnav_subhead">Do good, better. <span><span i18n:name="portal_title" tal:replace="view/portal_title">CoActivate</span> is a platform for social activism.</span></h2>
+  <h2 tal:condition="python:not view.piv.inProject" id="tagline" i18n:translate="topnav_subhead">
+   Do good, better. <span><span i18n:name="portal_title" tal:replace="view/portal_title">CoActivate</span> is a platform for social activism.</span>
+  </h2>
 
   <tal:comment replace="nothing">
     <!-- old topnav generation -->
@@ -48,7 +50,8 @@
              accesskey="4" class="oc-input-typeText"
              i18n:attributes="title topnav_site_search_label"
              />
-      <input class="button" name="searchsubmit" value="Find" tabindex="2" src="/++resource++img/search-button.png" align="middle" type="image" />
+      <input class="button" name="searchsubmit" value="Find" tabindex="2"
+             src="/++resource++img/search-button.png" align="middle" type="image" />
     </form>
     </div>
     
@@ -57,3 +60,4 @@
   </div>
 
 </div>
+

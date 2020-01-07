@@ -1,6 +1,5 @@
 <ul id="oc-usermenu-explore"
-    i18n:domain="opencore"
-    >
+    i18n:domain="opencore">
   <li class="home">
     <a tal:attributes="href context/portal_url"
        i18n:translate="topnav_explore_home">Home</a>
@@ -14,9 +13,8 @@
   <li>
     <a tal:attributes="href string:${context/portal_url}/projects"
        i18n:translate="topnav_explore_projects">
-      <i18n:setvar
-	 i18n:name="project_noun"
-	 tal:content="string:${view/project_noun/title}" />s
+      <i18n:setvar i18n:name="project_noun"
+            tal:content="string:${view/project_noun/title}" />s
     </a>
   </li>
 
@@ -24,9 +22,8 @@
     <a tal:attributes="href string:${context/portal_url}/projects/create"
        i18n:translate="topnav_explore_new_project">
 
-      Start a <i18n:setvar
-		 i18n:name="project_noun"
-		 tal:content="string:${view/project_noun/title}" />
+      Start a <i18n:setvar i18n:name="project_noun"
+         tal:content="string:${view/project_noun/title}" />
     </a>
   </li>
 </ul>
