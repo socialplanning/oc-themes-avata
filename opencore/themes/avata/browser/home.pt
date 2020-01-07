@@ -32,7 +32,9 @@
                                        src string:${project/getURL}/logo_thumb" />
                 </a>
                 <h3 class="oc-feed-item-title">
-                  <a tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title">Project title</a>
+                  <a tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title">
+                    <tal:comment replace="nothing">Project title</tal:comment>
+                  </a>
                 </h3>
                 <p i18n:translate="home_project_created" class="oc-feed-item-data oc-discreetText">
                   created
@@ -42,7 +44,7 @@
                    tal:define="desc project/Description | string:'';
                                shortdesc python:len(desc) > 200 and desc[:197] + '...' or desc"
                    tal:content="shortdesc">
-                  Project Mission
+                  <tal:comment replace="nothing">Project Mission</tal:comment>
                 </p>
               </li>
             </ul>
@@ -61,10 +63,11 @@
                   </tal:setvar>
                 </a>
                 <h3 class="oc-feed-item-title">
-                  <a href="" tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title">Project title</a>
+                  <a href="" tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title"><tal:comment replace="nothing">Project title</tal:comment></a>
                 </h3>
                 <p class="oc-feed-item-data oc-discreetText" tal:define="nmembers python: view.n_project_members(project)">
-                  <span tal:replace="nmembers">YY</span> member<span tal:condition="python: nmembers != 1" tal:replace="string:s" />
+                  <span tal:replace="nmembers">YY</span> <tal:i18n i18n:translate="">member</tal:i18n>
+<span tal:condition="python: nmembers != 1" tal:replace="string:s" />
                 </p>
                 <p class="oc-feed-item-data oc-discreetText" i18n:translate="home_project_updated">
                   last updated <span i18n:name="project_updated" tal:replace="python: view.pretty_date(project.ModificationDate)">Jan 1937</span>
@@ -91,7 +94,9 @@
               <li tal:repeat="item view/news" class="oc-feed-item oc-clearAfter">
                 <h3 class="oc-feed-item-title">
                   <a tal:content="item/Title" 
-                     tal:attributes="href string:${context/portal_url}/news/${item/getId}">News item</a>
+                     tal:attributes="href string:${context/portal_url}/news/${item/getId}">
+                     <tal:comment replace="nothing">News item</tal:comment>
+                  </a>
                 </h3>
                 <div class="oc-feed-item-data oc-discreetText">
                   <tal:i18n i18n:translate="home_news_item_by">by</tal:i18n>
@@ -100,7 +105,9 @@
 		     tal:content="userid" />,
                   <span tal:replace="python: view.pretty_date(item.CreationDate)" />
                 </div>
-                <p class="oc-feed-item-description" tal:content="item/Description">The description is the comment for the news item, however long it is</p>
+                <p class="oc-feed-item-description" tal:content="item/Description">
+                  <tal:comment replace="nothing">The description is the comment for the news item, however long it is</tal:comment>
+                </p>
               </li>
               <li>
                 <a i18n:translate="home_news_more_link"

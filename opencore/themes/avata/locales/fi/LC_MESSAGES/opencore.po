@@ -1,0 +1,330 @@
+# translation of opencore.po to Suomeksi
+# Oscar Fresan Landibar <oscar.fresan@kaapeli.fi>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: opencore\n"
+"POT-Creation-Date: 2013-06-16 00:18+0000\n"
+"PO-Revision-Date: 2013-05-26 17:46-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: The Open Planning Project <opencore-dev@lists.openplans.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: fi\n"
+"Language-Name: Suomeksi\n"
+"Preferred-Encodings: latin9 utf-8\n"
+"Domain: opencore\n"
+
+#: ../browser/mystuff-menu.pt:28
+msgid "Account"
+msgstr ""
+
+#: ../browser/latest_activity.pt:56
+msgid "Anyone can view this ${project_noun} and any ${portal_title} member can contribute to it"
+msgstr ""
+
+#: ../browser/latest_activity.pt:60
+msgid "Anyone can view this ${project_noun} but only team members can contribute to it"
+msgstr ""
+
+#: ../browser/latest_activity.pt:26
+msgid "EDIT"
+msgstr ""
+
+#: ../browser/latest_activity.pt:24
+msgid "Join"
+msgstr ""
+
+#: ../browser/home.pt:86
+msgid "News"
+msgstr ""
+
+#: ../browser/latest_activity.pt:65
+msgid "Only team members can view, contribute, or search for this ${project_noun}"
+msgstr ""
+
+#: ../browser/mystuff-menu.pt:14
+msgid "Profile"
+msgstr ""
+
+#: ../browser/latest_activity.pt:52
+msgid "Security"
+msgstr ""
+
+#: ../browser/mystuff-menu.pt:19
+msgid "Wiki"
+msgstr ""
+
+#: ../browser/latest_activity.pt:19
+msgid "created ${creation_date}, last updated ${modification_date}"
+msgstr ""
+
+#. Default: "Get started!"
+#: ../browser/get-started.pt:3
+msgid "get_started_heading"
+msgstr ""
+
+#. Default: "Become a member"
+#: ../browser/get-started.pt:8
+msgid "get_started_join"
+msgstr ""
+
+#. Default: "log in"
+#: ../browser/get-started.pt:10
+msgid "get_started_login"
+msgstr ""
+
+#. Default: "Find people"
+#: ../browser/get-started.pt:20
+msgid "get_started_people_search"
+msgstr ""
+
+#. Default: "Find ${project_noun}s"
+#: ../browser/get-started.pt:16
+msgid "get_started_project_search"
+msgstr ""
+
+#. Default: "${portal_title} is the simple way to bring groups together, promote your cause, make plans, manage projects, and get things done. ${portal_title} offers free mailing lists, wikis, task tracking, team management, and blogs to help you build an online community and promote real-world change."
+#: ../browser/home.pt:19
+msgid "home_functions_blurb"
+msgstr ""
+
+#. Default: "Newest ${project_noun}s"
+#: ../browser/home.pt:25
+msgid "home_newest_projects"
+msgstr ""
+
+#. Default: "by"
+#: ../browser/home.pt:102
+msgid "home_news_item_by"
+msgstr ""
+
+#. Default: "more news…"
+#: ../browser/home.pt:113
+msgid "home_news_more_link"
+msgstr ""
+
+#. Default: "You want to <strong>make a difference</strong>. We want to <strong>make it easy</strong>."
+#: ../browser/home.pt:18
+msgid "home_opening_blurb"
+msgstr ""
+
+#. Default: "created ${creation_date}"
+#: ../browser/home.pt:41
+msgid "home_project_created"
+msgstr ""
+
+#. Default: "last updated ${project_updated}"
+#: ../browser/home.pt:73
+msgid "home_project_updated"
+msgstr ""
+
+#. Default: "Updated ${project_noun}s"
+#: ../browser/home.pt:54
+msgid "home_updated_projects"
+msgstr ""
+
+#. Default: "${portal_title}: free project management tools, wikis, blogs, mailing lists and task tracking for neighborhood and global communities."
+#: ../browser/home.pt:3
+msgid "home_window_title"
+msgstr ""
+
+#: ../browser/home.pt:69
+msgid "member"
+msgstr ""
+
+#. Default: "${portal_title} News"
+#: ../browser/home.pt:90
+msgid "news_section_heading"
+msgstr ""
+
+#: ../browser/get-started.pt:9
+msgid "or"
+msgstr ""
+
+#. Default: "preferences"
+#: ../browser/tour.pt:111
+msgid "project_prefs_url"
+msgstr ""
+
+#. Default: "Announce your ${project_noun}."
+#: ../browser/tour.pt:20
+msgid "project_tour_announce"
+msgstr ""
+
+#. Default: "Blog"
+#: ../browser/tour.pt:41
+msgid "project_tour_blog"
+msgstr ""
+
+#. Default: "Speak out"
+#: ../browser/tour.pt:46
+msgid "project_tour_blog_advocate"
+msgstr ""
+
+#. Default: "Attract attention"
+#: ../browser/tour.pt:45
+msgid "project_tour_blog_buzz"
+msgstr ""
+
+#. Default: "Publish updates"
+#: ../browser/tour.pt:44
+msgid "project_tour_blog_publish"
+msgstr ""
+
+#. Default: "Communicate"
+#: ../browser/tour.pt:19
+msgid "project_tour_communicate"
+msgstr ""
+
+#. Default: "Congratulations on starting your ${project_noun}."
+#: ../browser/tour.pt:13
+msgid "project_tour_header"
+msgstr ""
+
+#. Default: "Now you can…"
+#: ../browser/tour.pt:14
+msgid "project_tour_header_2"
+msgstr ""
+
+#. Default: "Mailing lists"
+#: ../browser/tour.pt:74
+msgid "project_tour_mailinglists"
+msgstr ""
+
+#. Default: "Promote discussions"
+#: ../browser/tour.pt:78
+msgid "project_tour_mailinglists_discuss"
+msgstr ""
+
+#. Default: "Call supporters to action"
+#: ../browser/tour.pt:79
+msgid "project_tour_mailinglists_engage"
+msgstr ""
+
+#. Default: "Keep everyone up-to-date"
+#: ../browser/tour.pt:77
+msgid "project_tour_mailinglists_update"
+msgstr ""
+
+#. Default: "Organize"
+#: ../browser/tour.pt:54
+msgid "project_tour_organize"
+msgstr ""
+
+#. Default: "Keep your team organized and on-track."
+#: ../browser/tour.pt:55
+msgid "project_tour_organize_team"
+msgstr ""
+
+#. Default: "<!-- this is a hacky way to get the 'project_prefs_url' key into the i18n mapping, so that it can be used in the anchor href below. i don't know of a cleaner way to do this, unfortunately --> ${project_prefs_url} x <a href=\"${DYNAMIC_CONTENT}\">x</a>."
+#: ../browser/tour.pt:111
+msgid "project_tour_preferences"
+msgstr ""
+
+#. Default: "Want to add or remove tools from your ${project_noun}? Change your"
+#: ../browser/tour.pt:110
+msgid "project_tour_preferences_msg"
+msgstr ""
+
+#. Default: "Task Tracker"
+#: ../browser/tour.pt:87
+msgid "project_tour_tasktracker"
+msgstr ""
+
+#. Default: "Assign tasks to others"
+#: ../browser/tour.pt:90
+msgid "project_tour_tasktracker_delegate"
+msgstr ""
+
+#. Default: "Share to-do lists"
+#: ../browser/tour.pt:89
+msgid "project_tour_tasktracker_share"
+msgstr ""
+
+#. Default: "Keep track of progress"
+#: ../browser/tour.pt:91
+msgid "project_tour_tasktracker_track"
+msgstr ""
+
+#. Default: "Manage your team"
+#: ../browser/tour.pt:62
+msgid "project_tour_team"
+msgstr ""
+
+#. Default: "Invite people to join this ${project_noun}"
+#: ../browser/tour.pt:64
+msgid "project_tour_team_invite"
+msgstr ""
+
+#. Default: "Build momentum"
+#: ../browser/tour.pt:65
+msgid "project_tour_team_invite_again"
+msgstr ""
+
+#. Default: "Find collaborators"
+#: ../browser/tour.pt:66
+msgid "project_tour_team_invite_again_kinda"
+msgstr ""
+
+#. Default: "Wiki pages"
+#: ../browser/tour.pt:27
+msgid "project_tour_wiki"
+msgstr ""
+
+#. Default: "Sketch out your goals"
+#: ../browser/tour.pt:32
+msgid "project_tour_wiki_brainstorm"
+msgstr ""
+
+#. Default: "Write collaboratively"
+#: ../browser/tour.pt:31
+msgid "project_tour_wiki_collaborate"
+msgstr ""
+
+#. Default: "A blank canvas for key information"
+#: ../browser/tour.pt:30
+msgid "project_tour_wiki_infodump"
+msgstr ""
+
+#. Default: "Share photos"
+#: ../browser/tour.pt:33
+msgid "project_tour_wiki_media"
+msgstr ""
+
+#. Default: "Tour - ${project_title} on ${portal_title}"
+#: ../browser/tour.pt:4
+msgid "project_tour_window_title"
+msgstr ""
+
+#. Default: "Home"
+#: ../browser/explore-menu.pt:5
+msgid "topnav_explore_home"
+msgstr ""
+
+#. Default: "Start a ${project_noun}"
+#: ../browser/explore-menu.pt:27
+msgid "topnav_explore_new_project"
+msgstr ""
+
+#. Default: "People"
+#: ../browser/explore-menu.pt:10
+msgid "topnav_explore_people"
+msgstr ""
+
+#. Default: "${project_noun}s"
+#: ../browser/explore-menu.pt:17
+msgid "topnav_explore_projects"
+msgstr ""
+
+#. Default: "Search site"
+#: ../browser/topnav.pt:46
+msgid "topnav_site_search_label"
+msgstr ""
+
+#. Default: "Do good, better. <span>${portal_title} is a platform for social activism.</span>"
+#: ../browser/topnav.pt:22
+msgid "topnav_subhead"
+msgstr ""
+

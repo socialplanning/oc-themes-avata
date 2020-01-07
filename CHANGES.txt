@@ -1,0 +1,17 @@
+Changelog
+=========
+
+0.2-dev - (unreleased)
+----------------------
+
+ * Added Spanish translation. (macagua)
+ * Added initial translations (gettext files). (macagua)
+ * Added i18n support. (macagua)
+ * Added more metadata package. (macagua)
+ * Renamed README file. (macagua)
+ * Added .gitignore file. (macagua)
+
+0.1dev (2009-2010)
+---------------
+
+* TODO. (slinkp), (egj), (ejucovy)
