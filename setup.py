@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.1dev'
 
@@ -7,7 +6,7 @@ setup(
     name='oc-themes-avata',
     version=version,
     description='CoActivate.org theme for OpenCore Software',
-    # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+    # Get more strings from https://pypi.org/pypi?:action=list_classifiers
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Plugins",
