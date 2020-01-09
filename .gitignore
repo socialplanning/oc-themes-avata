@@ -100,7 +100,3 @@ eggs
 fake-eggs
 parts
 var
-
-# OSX
-.DS_Store
-
