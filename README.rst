@@ -61,6 +61,7 @@ Contribute
 
 - Issue Tracker: https://github.com/socialplanning/oc-themes-avata/issues
 - Source Code: https://github.com/socialplanning/oc-themes-avata
+- Documentation: https://www.coactivate.org/projects/opencore/
 - Translations: https://www.transifex.com/plone/social-planning/dashboard/
 
 
